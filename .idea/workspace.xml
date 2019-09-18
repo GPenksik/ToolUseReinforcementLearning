@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fccb4fca-8ab2-47b5-9aab-d78313b03768" name="Default Changelist" comment="" />
+    <list default="true" id="fccb4fca-8ab2-47b5-9aab-d78313b03768" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/TFTestNew.py" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/TFTestNew.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +152,8 @@
       <workItem from="1568627908668" duration="624000" />
       <workItem from="1568641968072" duration="6560000" />
       <workItem from="1568713505093" duration="20952000" />
-      <workItem from="1568805858776" duration="1400000" />
+      <workItem from="1568805858776" duration="2340000" />
+      <workItem from="1568825591213" duration="603000" />
     </task>
     <servers />
   </component>

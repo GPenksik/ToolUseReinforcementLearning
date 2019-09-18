@@ -145,20 +145,6 @@ def main():
                     csv.write("{:2.2f}\n".format(reward))
                 # print("\nSaving, yo!")
 
-        # if r.episode % report_episodes == 0:
-        # steps_per_second = r.timestep / (time.time() - r.start_time)
-        # logger.info("Finished episode {:d} after {:d} timesteps. Steps Per Second {:0.2f}".format(
-        #    r.agent.episode, r.episode_timestep, steps_per_second
-        # ))
-        # logger.info("Episode reward: {}".format(r.episode_rewards[-1]))
-        # logger.info("Average of last 500 rewards: {:0.2f}".
-        #            format(sum(r.episode_rewards[-500:]) / min(500, len(r.episode_rewards))))
-        # logger.info("Average of last 100 rewards: {:0.2f}".
-        #            format(sum(r.episode_rewards[-100:]) / min(100, len(r.episode_rewards))))
-        # logger.info("{:6d},    {:+6.2f},     {:+6.2f}".format(r.agent.episode, r.episode_rewards[-1],
-        #                                                       sum(r.episode_rewards[-100:]) / min(100, len(
-        #                                                           r.episode_rewards))))
-
         if r.episode == 1 or (r.episode % agent_save_period == 0):
             logger.info(
                 "\nSaving agent to {} at episode {}".format(
