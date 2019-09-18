@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Box2dEnv", "Box2dEnv\Box2dEnv.pyproj", "{17A4DB65-876B-45E7-82E5-7083FEF2D668}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17A4DB65-876B-45E7-82E5-7083FEF2D668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A4DB65-876B-45E7-82E5-7083FEF2D668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D61CD0D5-49B1-44AB-9945-376897F836C8}
+	EndGlobalSection
+EndGlobal

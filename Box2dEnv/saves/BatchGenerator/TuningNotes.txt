@@ -1,0 +1,29 @@
+PPOTune1: SimplePush (3 seeds)
+Opt Steps: 30-50 (40 best, but not that much difference)
+Baseline Steps: 2,8,14 (8 marginally best. 2 definitely no)
+Batch Size: 4, 8, 16 (16 clearly best)
+
+PPOTune2: Not performed
+
+PPOTune3: SimplePush (1 seed)
+Testing reward and random level
+Performance collapses for both lower random and lower reward
+
+PPOTune4: SimplePush (not fully finished) (1 seed)
+Opt Steps: 50, 80 (No significant difference. 50 maybe marginally better)
+Baseline Steps: 2, 16, 36 (36 and 16 both decent, 2 generally bad except with v.high batch size)
+Batch size: 4, 24, 46 (24 and 46 both good. 24 marginally better)
+
+PPOTune5: EnvTest Push (not fully finished) (5 seeds)(2 and 3 reward levels)
+Opt Steps: 20, 30, 40 (Not much difference. 30 marginally worse?)
+Batch Size: 12, 16, 24 (Higher is better)
+Network Size: 512, 1024, 2048 (Lower is significantly better)
+
+Current best: (prioritize results from PPOTune5)
+Baseline steps: Keep at 8 for now
+Opt Steps: 20
+Batch Size: Keep at 24
+Network Size: 512 currently seems best(Some evidence that low opt steps combines well with large batch size for gradual learning)
+At reward level 2, average performance doesn't really change for any of the parameters? 
+
+Try smaller networks, for longer period?

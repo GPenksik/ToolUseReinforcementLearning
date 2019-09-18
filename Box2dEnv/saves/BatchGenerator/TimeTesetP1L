@@ -1,0 +1,4 @@
+#!/bin/bash
+# Scripty script
+
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 995 BlockPushSimpleContinuous-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 100 -t 10000000 -m 1000 -s modelSave -sd 20 -rn 3 -rl 3 -bt 8 -os 40 -bs 8
