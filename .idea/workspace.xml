@@ -3,7 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="fccb4fca-8ab2-47b5-9aab-d78313b03768" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/GymLink/env_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/Lander.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/Lander_PPO.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/Lander_net_actor_cont.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/Lander_net_critic_cont.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/TFTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/TFTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Box2dEnv/TFTestNew.py" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/TFTestNew.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/Train.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/lander_net_DuelDDQN.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/999-L23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/999-L33-20-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/999-L33-20-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/999-P23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/999-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/configs/900-mlp2_network.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/configs/900-mlp2_network.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/configs/ppo-new.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/configs/ppo-new.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,6 +26,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1QByLynmesx4cKOTDVPAExCms88" />
@@ -19,15 +38,20 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Box2dEnv" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/conda/conda/envs/EnvTest/Lib/site-packages/tensorforce/core/policies" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\genia\source\repos\Box2dEnv\examples" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\genia\AppData\Local\conda\conda\envs\EnvTest\Lib\site-packages\tensorforce\core\policies" />
+      <recent name="C:\Users\genia\AppData\Local\conda\conda\envs\EnvTest\Lib\site-packages\tensorforce\agents" />
+      <recent name="C:\Users\genia\AppData\Local\conda\conda\envs\EnvTest\Lib\site-packages\tensorforce\core\models" />
       <recent name="C:\Users\genia\source\repos\Box2dEnv\Box2dEnv" />
       <recent name="C:\Users\genia\source\repos\Box2dEnv\examples\configs" />
-      <recent name="C:\Users\genia\AppData\Local\conda\conda\envs\EnvTest\Lib\site-packages\gym\envs\box2d" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -153,7 +177,29 @@
       <workItem from="1568641968072" duration="6560000" />
       <workItem from="1568713505093" duration="20952000" />
       <workItem from="1568805858776" duration="2340000" />
-      <workItem from="1568825591213" duration="603000" />
+      <workItem from="1568825591213" duration="3757000" />
+      <workItem from="1568973116773" duration="2802000" />
+      <workItem from="1569059227713" duration="3700000" />
+      <workItem from="1569082105564" duration="5828000" />
+      <workItem from="1569149253918" duration="14028000" />
+      <workItem from="1569230806241" duration="13012000" />
+      <workItem from="1569267297490" duration="2017000" />
+      <workItem from="1569326435547" duration="4415000" />
+      <workItem from="1569343977284" duration="1698000" />
+      <workItem from="1569415697273" duration="11763000" />
+      <workItem from="1569489513166" duration="13841000" />
+      <workItem from="1569508260594" duration="3041000" />
+      <workItem from="1569769082982" duration="3064000" />
+      <workItem from="1569841884702" duration="15642000" />
+      <workItem from="1569867833038" duration="927000" />
+      <workItem from="1569870785623" duration="622000" />
+      <workItem from="1569927237343" duration="11620000" />
+      <workItem from="1570015856615" duration="19489000" />
+      <workItem from="1570100833652" duration="6938000" />
+      <workItem from="1570119706152" duration="3188000" />
+      <workItem from="1570192062484" duration="9134000" />
+      <workItem from="1570442723211" duration="1624000" />
+      <workItem from="1570617201986" duration="1747000" />
     </task>
     <servers />
   </component>
@@ -176,42 +222,44 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Box2dEnv/TFTestDist.py</url>
-          <line>196</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Box2dEnv/TFTest.py</url>
-          <line>206</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/AppData/Local/conda/conda/envs/EnvTest/Lib/site-packages/tensorforce/agents/agent.py</url>
-          <line>62</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Box2dEnv/TFTest.py</url>
-          <line>99</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Box2dEnv/TFTestNew.py</url>
-          <line>129</line>
-          <option name="timeStamp" value="17" />
+          <line>105</line>
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Box2dEnv/TFTestNew.py</url>
-          <line>104</line>
-          <option name="timeStamp" value="22" />
+          <url>file://$USER_HOME$/AppData/Local/conda/conda/envs/EnvTest/Lib/site-packages/tensorforce/core/models/curious_policy_model.py</url>
+          <line>292</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/AppData/Local/conda/conda/envs/EnvTest/Lib/site-packages/tensorforce/core/policies/curious_parametrized_distributions.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint suspend="THREAD" type="python-line">
+          <url>file://$USER_HOME$/AppData/Local/conda/conda/envs/EnvTest/Lib/site-packages/tensorforce/core/policies/curious_parametrized_distributions.py</url>
+          <line>100</line>
+          <option name="timeStamp" value="91" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="Module" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Box2dEnv$TFTestDist.coverage" NAME="TFTestDist Coverage Results" MODIFIED="1568123470252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Box2dEnv" />
-    <SUITE FILE_PATH="coverage/Box2dEnv$TFTestNew.coverage" NAME="TFTestNew Coverage Results" MODIFIED="1568743132184" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Box2dEnv" />
-    <SUITE FILE_PATH="coverage/Box2dEnv$TFTest.coverage" NAME="TFTest Coverage Results" MODIFIED="1568726578371" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Box2dEnv" />
+    <SUITE FILE_PATH="coverage/Box2dEnv$TFTestNew.coverage" NAME="TFTestNew Coverage Results" MODIFIED="1570617641516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Box2dEnv" />
+    <SUITE FILE_PATH="coverage/Box2dEnv$TFTest.coverage" NAME="TFTest Coverage Results" MODIFIED="1569419043480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Box2dEnv" />
   </component>
 </project>

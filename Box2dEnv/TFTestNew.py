@@ -67,7 +67,7 @@ def main():
 
     # Set random seed for environment
     environment.environment.env.seed(random_seed)
-    environment.environment.env.set_reward(2)
+    environment.environment.env.set_reward(3)
     environment.environment.env.set_random(3)
     environment.environment.env.set_reward_scale(6)
 
@@ -87,9 +87,10 @@ def main():
     # agentSpec['network']['layers'] = network
     # agentSpec['critic_network']['layers'] = network
     agent = Agent.create(
-        max_episode_timesteps=1000,
+        max_episode_timesteps=3000,
         agent=agentSpec,
-        environment=environment
+        environment=environment,
+        seed=random_seed
         # kwargs=dict(
         #     states=environment.states,
         #     actions=environment.actions,
@@ -159,7 +160,7 @@ def main():
         print(r)
 
     runner.run(
-        num_episodes=2000, num_timesteps=10000000, max_episode_timesteps=1000, num_repeat_actions=16,
+        num_episodes=2000, num_timesteps=10000000, max_episode_timesteps=3000, num_repeat_actions=16,
         # Callback
         callback=episode_finished, callback_episode_frequency=1, callback_timestep_frequency=None,
         # Tqdm

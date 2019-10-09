@@ -54,8 +54,9 @@ def main():
     visualize_period = 1
     run_number = 999
 
-    load_agent = False
-    agent_filename = '371-P33-27-PPO-2000'
+    load_agent = True
+    #agent_filename = '371-P33-27-PPO-2000' # Good push example
+    agent_filename = '283-L23-23-PPO-1600' # Good lift example
     to_visualize = True
 
     # Set logging level
@@ -79,7 +80,7 @@ def main():
 
     # Set random seed for environment
     environment.gym.seed(random_seed)
-    environment.gym.unwrapped.set_reward(2)
+    environment.gym.unwrapped.set_reward(1)
     environment.gym.unwrapped.set_random(3)
     environment.gym.unwrapped.set_reward_scale(6)
 
@@ -88,7 +89,7 @@ def main():
     with open('C:\\Users\\genia\\Source\\Repos\\Box2dEnv\\examples\\configs\\300-ppo.json', 'r') as fp:
         agentSpec = json.load(fp=fp)
 
-    with open('C:\\Users\\genia\\Source\\Repos\\Box2dEnv\\examples\\configs\\300-mlp2_network.json', 'r') as fp:
+    with open('C:\\Users\\genia\\Source\\Repos\\Box2dEnv\\examples\\configs\\900-mlp2_network.json', 'r') as fp:
         network = json.load(fp=fp)
 
     #agentSpec['update_mode'].update(batch_size=24)
@@ -138,7 +139,7 @@ def main():
     runner = Runner(
         agent=agent,
         environment=environment,
-        repeat_actions=12
+        repeat_actions=16
     )
 
     report_frequently = True
@@ -207,10 +208,10 @@ def main():
     runner.run(
         num_timesteps=20000000,
         num_episodes=10000,
-        max_episode_timesteps=1000,
+        max_episode_timesteps=3000,
         deterministic=False,
         episode_finished=episode_finished,
-        testing=False,
+        testing=True,
         sleep=None
     )
     runner.close()

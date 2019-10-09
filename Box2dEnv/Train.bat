@@ -1,2 +1,0 @@
-C:\Users\genia\AppData\Local\conda\conda\envs\EnvTest\python.exe C:\Users\genia\source\repos\Box2dEnv\Box2dEnv\TrainScript.py 950 BlockPushSimpleContinuous-v2 -a 860-ppo.json -n mlp2_network.json -e 20 -t 10000000 -m 1000 -s modeSave -se 500 -sd 20 -rn 2 -rl 2
-C:\Users\genia\AppData\Local\conda\conda\envs\EnvTest\python.exe C:\Users\genia\source\repos\Box2dEnv\Box2dEnv\TrainScript.py 951 BlockPushSimpleContinuous-v2 -a 860-ppo.json -n mlp2_network.json -e 20 -t 10000000 -m 1000 -s modeSave -se 500 -sd 21 -rn 2 -rl 2
