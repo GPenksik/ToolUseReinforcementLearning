@@ -45,7 +45,7 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 def main():
     # SET BASIC PARAMETERS
     start_time = time.time()
-    random_seed = 20
+    random_seed = 28
     agent_save_period = 500
     visualize_period = 1
     run_number = 999
@@ -134,25 +134,25 @@ def main():
         # r.agent.restore_model('C:\\Users\\genia\\Source\\Repos\\Box2dEnv\\Box2dEnv\\saves\\modelSave')
 
         save_period = 5
-        if r.episode % visualize_period == 0:
+        if r.episodes % visualize_period == 0:
             if to_visualize:
                 environment.visualize = True  # Set to true to visualize
         else:
             environment.visualize = False
 
-        if r.episode % save_period == 0:
+        if r.episodes % save_period == 0:
             with open('C:\\Users\\genia\\Source\\Repos\\Box2dEnv\\Box2dEnv\\saves\\{}.csv'.format(nName), 'a+') as csv:
                 for reward in r.episode_rewards[-save_period:]:
                     csv.write("{:2.2f}\n".format(reward))
                 # print("\nSaving, yo!")
 
-        if r.episode == 1 or (r.episode % agent_save_period == 0):
+        if r.episodes == 1 or (r.episodes % agent_save_period == 0):
             logger.info(
                 "\nSaving agent to {} at episode {}".format(
-                    'C:\\Users\\genia\\Source\\Repos\\Box2dEnv\\Box2dEnv\\saves\\modelSave\\{}'.format(nName), r.episode))
-            r.agent.save(
-                directory='C:\\Users\\genia\\Source\\Repos\\Box2dEnv\\Box2dEnv\\saves\\modelSave\\{}{}'.format(nName, r.episode),
-                append_timestep=False)
+                    'C:\\Users\\genia\\Source\\Repos\\Box2dEnv\\Box2dEnv\\saves\\modelSave\\{}'.format(nName), r.episodes))
+            # r.agent.save(
+            #     directory='C:\\Users\\genia\\Source\\Repos\\Box2dEnv\\Box2dEnv\\saves\\modelSave\\{}{}'.format(nName, r.episodes),
+            #     append_timestep=False)
 
         return True
 
@@ -167,7 +167,7 @@ def main():
         use_tqdm=True, mean_horizon=100,
         # Evaluation
         evaluation=False, evaluation_callback=None, evaluation_frequency=None,
-        max_evaluation_timesteps=None, num_evaluation_iterations=1
+        max_evaluation_timesteps=None, num_evaluation_iterations=0
     )
     # runner.run(
     #     num_timesteps=20000000,

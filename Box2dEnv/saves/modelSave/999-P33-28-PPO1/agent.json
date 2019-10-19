@@ -1,0 +1,1 @@
+{"parallel_interactions": 1, "agent": "ppo", "name": "agent", "exploration": 0.0, "likelihood_ratio_clipping": 0.2, "learning_rate": 0.001, "variable_noise": 0.0, "discount": 0.99, "update_frequency": null, "actions": {"min_value": 
