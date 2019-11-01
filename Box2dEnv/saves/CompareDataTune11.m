@@ -3,10 +3,10 @@ timestepStart = 1;
 timestepLimit = 2000;
 avgStep = 100; completeThreshold = 0.9;
 RL = [1 1 1 2 2 2 3 3 3] ; RndL = [1 2 3 1 2 3 1 2 3]; Tsk = ["P" "L"];
-RL = [3 2] ; RndL = [3 3];
-nParams = 2;
+%RL = [3 2] ; RndL = [3 3];
+nParams = length(RL);
 runNumbers = [1:10];
-runNumbers = [11:20];
+%runNumbers = [11:20];
 %runNumbers = [201:209 273:275 210:218 276:278 ...
 %               219:227 279:281 228:236 282:284 ...
 %               237:245 285:287 246:254 288:290 ...
@@ -50,7 +50,7 @@ end
 figure(2)
 clf
 hold on
-j = 2;
+j = 1;
 for i=1:nParams
     plotNum = mod(i,nParams);
     if plotNum == 0 plotNum = nParams;, end;

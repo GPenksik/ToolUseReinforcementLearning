@@ -49,15 +49,15 @@ def main():
 
     # SET BASIC PARAMETERS
     start_time = time.time()
-    random_seed = 20
+    random_seed = 28
     agent_save_period = 500
     visualize_period = 1
-    run_number = 999
+    run_number = 997
 
-    load_agent = True
+    load_agent = False
     #agent_filename = '371-P33-27-PPO-2000' # Good push example
     agent_filename = '283-L23-23-PPO-1600' # Good lift example
-    to_visualize = True
+    to_visualize = False
 
     # Set logging level
     logging.basicConfig(level=logging.INFO)
@@ -80,7 +80,7 @@ def main():
 
     # Set random seed for environment
     environment.gym.seed(random_seed)
-    environment.gym.unwrapped.set_reward(1)
+    environment.gym.unwrapped.set_reward(3)
     environment.gym.unwrapped.set_random(3)
     environment.gym.unwrapped.set_reward_scale(6)
 
@@ -103,8 +103,8 @@ def main():
         kwargs=dict(
             states=environment.states,
             actions=environment.actions,
-            network=network,
-            random_seed=random_seed
+            network=network
+            #random_seed=random_seed
         )
     )
 
@@ -139,7 +139,7 @@ def main():
     runner = Runner(
         agent=agent,
         environment=environment,
-        repeat_actions=16
+        repeat_actions=1
     )
 
     report_frequently = True
@@ -207,11 +207,11 @@ def main():
 
     runner.run(
         num_timesteps=20000000,
-        num_episodes=10000,
-        max_episode_timesteps=3000,
+        num_episodes=2000,
+        max_episode_timesteps=500,
         deterministic=False,
         episode_finished=episode_finished,
-        testing=True,
+        testing=False,
         sleep=None
     )
     runner.close()

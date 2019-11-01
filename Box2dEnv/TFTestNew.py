@@ -45,10 +45,10 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 def main():
     # SET BASIC PARAMETERS
     start_time = time.time()
-    random_seed = 28
+    random_seed = 21
     agent_save_period = 500
     visualize_period = 1
-    run_number = 999
+    run_number = 965
 
     load_agent = False
     agent_filename = '371-P33-27-PPO-2000'
@@ -73,7 +73,7 @@ def main():
 
     # Initialize Agent-Network-Model objects
 
-    with open('C:\\Users\\genia\\Source\\Repos\\Box2dEnv\\examples\\configs\\ppo-new.json', 'r') as fp:
+    with open('C:\\Users\\genia\\Source\\Repos\\Box2dEnv\\examples\\configs\\ppo-new3.json', 'r') as fp:
         agentSpec = json.load(fp=fp)
 
     with open('C:\\Users\\genia\\Source\\Repos\\Box2dEnv\\examples\\configs\\mlp2_network-new.json', 'r') as fp:
@@ -81,7 +81,17 @@ def main():
 
     # agentSpec['update_mode'].update(batch_size=24)
     # agentSpec['update_mode'].update(frequency=24)
-    # agentSpec['baseline']['sizes'] = [512,512]
+    #agentSpec['baseline']['sizes'] = [512,512]
+    agentSpec['optimization_steps'] = 9
+    agentSpec['network']['layers'][0]['size'] = 128
+    agentSpec['network']['layers'][1]['size'] = 129
+    agentSpec['critic_network']['layers'][0]['size'] = 126
+    agentSpec['critic_network']['layers'][1]['size'] = 127
+    agentSpec['batch_size'] = 13
+    agentSpec['subsampling_fraction']=0.8
+    agentSpec['critic_optimizer']['num_steps'] = 11
+    agentSpec['likelihood_ratio_clipping'] = 0.2
+
     # network[0].update(size=512)
     # network[1].update(size=512)
     # agentSpec['network']['layers'] = network
@@ -160,7 +170,7 @@ def main():
         print(r)
 
     runner.run(
-        num_episodes=2000, num_timesteps=10000000, max_episode_timesteps=3000, num_repeat_actions=16,
+        num_episodes=2000, num_timesteps=10000000, max_episode_timesteps=500, num_repeat_actions=1,
         # Callback
         callback=episode_finished, callback_episode_frequency=1, callback_timestep_frequency=None,
         # Tqdm
@@ -169,15 +179,7 @@ def main():
         evaluation=False, evaluation_callback=None, evaluation_frequency=None,
         max_evaluation_timesteps=None, num_evaluation_iterations=0
     )
-    # runner.run(
-    #     num_timesteps=20000000,
-    #     num_episodes=10000,
-    #     max_episode_timesteps=1000,
-    #     deterministic=False,
-    #     episode_finished=episode_finished,
-    #     testing=False,
-    #     sleep=None
-    # )
+
     runner.close()
 
     logger.info("Learning finished. Total episodes: {ep}".format(ep=runner.agent.episode))

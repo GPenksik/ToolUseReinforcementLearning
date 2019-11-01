@@ -2,21 +2,791 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fccb4fca-8ab2-47b5-9aab-d78313b03768" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/Curious_PPO.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/Curious_PPO_cartpole.2py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/Curious_PPO_cartpole.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/Curious_PPO_cartpole2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/Curious_PPO_cartpole3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/Curious_PPO_cartpole6state.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/Curious_PPO_cartpoleSeemsToBeWorkingWithConv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/Curious_PPO_cartpoleSortOfWorking1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/Curious_fit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/Curious_net_actor_cont.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/Curious_net_critic_cont.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/Curious_net_rnd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/Curious_net_rnd_backup.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/Curious_net_rnd_backup2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/Curious_net_rnd_conv.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/TS-1L.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/TuneScript-2L.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/TuneScript-MC.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/TuneScript-MCL.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/TuneScript-MCLc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Box2dEnv/TuneScript-MCWc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examples/configs/ppo-new2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/genia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/genia.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Box2dEnv/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Box2dEnv/v15/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/GymLink/Lander_PPO.py" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/Lander_PPO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/GymLink/Lander_net_actor_cont.py" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/Lander_net_actor_cont.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/GymLink/Lander_net_critic_cont.py" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/Lander_net_critic_cont.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/TFTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/TFTest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Box2dEnv/TFTestNew.py" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/TFTestNew.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-20-PPO1/model.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-20-PPO1/model.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-20-PPO1/model.index" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-20-PPO1/model.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-20-PPO1/model.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-20-PPO1/model.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Box2dEnv/savesMonitor/summary-20191004-143520/events.out.tfevents.1570196133.MSI.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Box2dEnv/savesMonitor/summary-20191004-160503/events.out.tfevents.1570201516.MSI.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Box2dEnv/savesMonitor/summary-20191004-181505/events.out.tfevents.1570209331.MSI.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Box2dEnv/savesMonitor/summary-20191004-183036/events.out.tfevents.1570210262.MSI.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/021-L33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/021-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/022-L33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/022-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/023-L33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/023-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/024-L33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/024-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/025-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/025-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/026-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/026-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/027-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/027-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/028-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/028-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/029-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/029-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/030-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/030-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/031-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/031-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/032-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/032-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/033-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/033-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/034-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/034-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/035-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/035-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/036-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/036-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/037-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/037-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/038-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/038-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/039-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/039-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/040-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/040-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/041-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/041-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/042-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/042-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/043-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/043-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/044-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/044-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/045-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/045-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/046-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/046-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/047-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/047-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/048-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/048-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/049-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/049-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/050-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/050-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/051-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/051-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/052-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/052-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/053-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/053-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/054-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/054-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/055-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/055-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/056-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/056-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/057-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/057-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/058-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/058-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/059-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/059-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/060-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/060-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/061-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/061-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/062-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/062-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/063-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/063-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/064-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/064-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/065-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/065-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/066-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/066-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/067-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/067-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/068-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/068-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/069-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/069-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/070-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/070-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/071-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/071-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/072-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/072-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/073-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/073-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/074-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/074-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/075-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/075-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/076-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/076-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/077-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/077-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/078-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/078-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/079-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/079-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/080-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/080-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/081-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/081-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/082-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/082-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/083-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/083-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/084-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/084-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/085-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/085-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/086-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/086-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/087-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/087-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/088-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/088-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/089-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/089-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/090-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/090-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/091-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/091-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/092-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/092-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/093-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/093-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/094-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/094-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/095-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/095-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/096-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/096-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/097-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/097-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/098-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/098-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/099-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/099-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/100-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/100-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/101-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/101-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/102-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/102-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/201-L23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/201-L33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/202-L23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/202-L33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/203-L23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/203-L33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/204-L23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/204-L33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/205-L23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/205-L33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/206-L23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/206-L33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/207-L23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/207-L33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/208-L23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/208-L33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/209-L23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/209-L33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/210-L23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/210-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/211-L23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/211-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/212-L23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/212-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/213-L23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/213-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/214-L23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/214-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/215-L23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/215-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/216-L23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/216-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/217-L23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/217-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/218-L23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/218-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/219-L23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/219-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/220-L23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/220-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/221-L23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/221-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/222-L23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/222-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/223-L23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/223-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/224-L23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/224-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/225-L23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/225-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/226-L23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/226-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/227-L23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/227-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/228-L23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/228-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/229-L23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/229-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/230-L23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/230-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/231-L23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/231-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/232-L23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/232-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/233-L23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/233-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/234-L23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/234-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/235-L23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/235-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/236-L23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/236-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/237-L23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/237-L33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/238-L23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/238-L33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/239-L23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/239-L33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/240-L23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/240-L33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/241-L23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/241-L33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/242-L23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/242-L33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/243-L23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/243-L33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/244-L23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/244-L33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/245-L23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/245-L33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/246-L23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/246-L33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/247-L23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/247-L33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/248-L23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/248-L33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/249-L23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/249-L33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/250-L23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/250-L33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/251-L23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/251-L33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/252-L23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/252-L33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/253-L23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/253-L33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/254-L23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/254-L33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/255-L23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/255-L33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/256-L23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/256-L33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/257-L23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/257-L33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/258-L23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/258-L33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/259-L23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/259-L33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/260-L23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/260-L33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/261-L23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/261-L33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/262-L23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/262-L33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/263-L23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/263-L33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/264-L23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/264-L33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/265-L23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/265-L33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/266-L23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/266-L33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/267-L23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/267-L33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/268-L23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/268-L33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/269-L23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/269-L33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/270-L23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/270-L33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/271-L23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/271-L33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/272-L23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/272-L33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/273-L23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/273-L33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/274-L23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/274-L33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/275-L23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/275-L33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/276-L23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/276-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/277-L23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/277-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/278-L23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/278-L33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/279-L23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/279-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/280-L23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/280-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/281-L23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/281-L33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/282-L23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/282-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/283-L23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/283-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/284-L23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/284-L33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/285-L23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/285-L33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/286-L23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/286-L33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/287-L23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/287-L33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/288-L23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/288-L33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/289-L23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/289-L33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/290-L23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/290-L33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/291-L23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/291-L33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/292-L23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/292-L33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/293-L23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/293-L33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/294-L23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/294-L33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/295-L23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/295-L33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/296-L23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/296-L33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/301-P23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/301-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/302-P23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/302-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/303-P23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/303-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/304-P23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/304-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/305-P23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/305-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/306-P23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/306-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/307-P23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/307-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/308-P23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/308-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/309-P23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/309-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/310-P23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/310-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/311-P23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/311-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/312-P23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/312-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/313-P23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/313-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/314-P23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/314-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/315-P23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/315-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/316-P23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/316-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/317-P23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/317-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/318-P23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/318-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/319-P23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/319-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/320-P23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/320-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/321-P23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/321-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/322-P23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/322-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/323-P23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/323-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/324-P23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/324-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/325-P23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/325-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/326-P23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/326-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/327-P23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/327-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/328-P23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/328-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/329-P23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/329-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/330-P23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/330-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/331-P23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/331-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/332-P23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/332-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/333-P23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/333-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/334-P23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/334-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/335-P23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/335-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/336-P23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/336-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/337-P23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/337-P33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/338-P23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/338-P33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/339-P23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/339-P33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/340-P23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/340-P33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/341-P23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/341-P33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/342-P23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/342-P33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/343-P23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/343-P33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/344-P23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/344-P33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/345-P23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/345-P33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/346-P23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/346-P33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/347-P23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/347-P33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/348-P23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/348-P33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/349-P23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/349-P33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/350-P23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/350-P33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/351-P23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/351-P33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/352-P23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/352-P33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/353-P23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/353-P33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/354-P23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/354-P33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/355-P23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/355-P33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/356-P23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/356-P33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/357-P23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/357-P33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/358-P23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/358-P33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/359-P23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/359-P33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/360-P23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/360-P33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/361-P23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/361-P33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/362-P23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/362-P33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/363-P23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/363-P33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/364-P23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/364-P33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/365-P23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/365-P33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/366-P23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/366-P33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/367-P23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/367-P33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/368-P23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/368-P33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/369-P23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/369-P33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/370-P23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/370-P33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/371-P23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/371-P33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/372-P23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/372-P33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/373-P23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/373-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/374-P23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/374-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/375-P23-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/375-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/376-P23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/376-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/377-P23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/377-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/378-P23-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/378-P33-21-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/379-P23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/379-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/380-P23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/380-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/381-P23-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/381-P33-22-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/382-P23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/382-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/383-P23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/383-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/384-P23-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/384-P33-23-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/385-P23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/385-P33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/386-P23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/386-P33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/387-P23-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/387-P33-24-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/388-P23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/388-P33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/389-P23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/389-P33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/390-P23-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/390-P33-25-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/391-P23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/391-P33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/392-P23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/392-P33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/393-P23-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/393-P33-26-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/394-P23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/394-P33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/395-P23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/395-P33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/396-P23-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/396-P33-27-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/999-L33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/999-P33-20-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/999-P33-28-PPO.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/301-P33-20-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/301-P33-20-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/302-P33-20-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/302-P33-20-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/303-P33-20-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/303-P33-20-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/304-P33-20-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/304-P33-20-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/305-P33-20-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/305-P33-20-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/306-P33-20-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/306-P33-20-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/307-P33-20-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/307-P33-20-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/308-P33-20-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/308-P33-20-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/309-P33-20-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/309-P33-20-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/310-P33-21-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/310-P33-21-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/311-P33-21-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/311-P33-21-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/312-P33-21-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/312-P33-21-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/313-P33-21-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/313-P33-21-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/314-P33-21-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/314-P33-21-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/315-P33-21-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/315-P33-21-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/316-P33-21-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/316-P33-21-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/317-P33-21-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/317-P33-21-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/318-P33-21-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/318-P33-21-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/319-P33-22-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/319-P33-22-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/320-P33-22-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/320-P33-22-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/321-P33-22-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/321-P33-22-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/322-P33-22-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/322-P33-22-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/323-P33-22-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/323-P33-22-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/324-P33-22-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/324-P33-22-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/325-P33-22-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/325-P33-22-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/326-P33-22-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/326-P33-22-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/327-P33-22-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/327-P33-22-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/328-P33-23-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/328-P33-23-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/329-P33-23-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/329-P33-23-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/330-P33-23-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/330-P33-23-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/331-P33-23-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/331-P33-23-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/332-P33-23-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/332-P33-23-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/333-P33-23-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/333-P33-23-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/334-P33-23-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/334-P33-23-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/335-P33-23-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/335-P33-23-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/336-P33-23-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/336-P33-23-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/337-P33-24-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/337-P33-24-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/338-P33-24-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/338-P33-24-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/339-P33-24-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/339-P33-24-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/340-P33-24-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/340-P33-24-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/341-P33-24-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/341-P33-24-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/342-P33-24-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/342-P33-24-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/343-P33-24-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/343-P33-24-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/344-P33-24-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/344-P33-24-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/345-P33-24-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/345-P33-24-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/346-P33-25-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/346-P33-25-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/347-P33-25-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/347-P33-25-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/348-P33-25-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/348-P33-25-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/349-P33-25-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/349-P33-25-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/350-P33-25-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/350-P33-25-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/351-P33-25-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/351-P33-25-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/352-P33-25-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/352-P33-25-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/353-P33-25-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/353-P33-25-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/354-P33-25-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/354-P33-25-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/355-P33-26-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/355-P33-26-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/356-P33-26-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/356-P33-26-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/357-P33-26-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/357-P33-26-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/358-P33-26-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/358-P33-26-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/359-P33-26-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/359-P33-26-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/360-P33-26-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/360-P33-26-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/361-P33-26-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/361-P33-26-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/362-P33-26-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/362-P33-26-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/363-P33-26-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/363-P33-26-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/364-P33-27-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/364-P33-27-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/365-P33-27-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/365-P33-27-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/366-P33-27-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/366-P33-27-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/367-P33-27-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/367-P33-27-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/368-P33-27-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/368-P33-27-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/369-P33-27-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/369-P33-27-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/370-P33-27-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/370-P33-27-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/371-P33-27-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/371-P33-27-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/372-P33-27-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/372-P33-27-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/373-P33-20-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/373-P33-20-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/374-P33-20-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/374-P33-20-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/375-P33-20-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/375-P33-20-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/376-P33-21-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/376-P33-21-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/377-P33-21-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/377-P33-21-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/378-P33-21-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/378-P33-21-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/379-P33-22-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/379-P33-22-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/380-P33-22-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/380-P33-22-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/381-P33-22-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/381-P33-22-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/382-P33-23-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/382-P33-23-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/383-P33-23-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/383-P33-23-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/384-P33-23-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/384-P33-23-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/385-P33-24-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/385-P33-24-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/386-P33-24-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/386-P33-24-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/387-P33-24-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/387-P33-24-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/388-P33-25-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/388-P33-25-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/389-P33-25-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/389-P33-25-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/390-P33-25-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/390-P33-25-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/391-P33-26-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/391-P33-26-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/392-P33-26-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/392-P33-26-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/393-P33-26-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/393-P33-26-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/394-P33-27-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/394-P33-27-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/395-P33-27-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/395-P33-27-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/Backup/396-P33-27-PPO.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/Backup/396-P33-27-PPO.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/BatchScriptGenerator - 1 - Simple PPO HP Tune.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/BatchScriptGenerator - 10 - Benchmark 1.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/BatchScriptGenerator - 4 - Simple PPO HP Tune.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/BatchScriptGenerator - 5 - PPO HP Tune - Copy.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/BatchScriptGenerator - 6 - PPO HP Tune Push.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/BatchScriptGenerator - 7 - Reward Scale test.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/BatchScriptGenerator - 8 - Reward Scale test.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/BatchScriptGenerator - 9 - PPO HP Tune.xlsm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/NetworkSizeTest.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune-4-21-27.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune-4fixed.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune-5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune-5.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune-5L-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune-5L-2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune-5L.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune-DistTest.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune7-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune7-2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune7-3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune7-4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune8-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune8-2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune8-3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune8-4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune9-1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune9-2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune9-3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune9-4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/PPOTune9-Final" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/RewardScaleTest.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/TestShell" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/TimeTesetP1L" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/TimeTesetP2L" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/TimeTesetSeriesL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/TimeTestP1.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/TimeTestP2.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/TimeTestSeries.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/BatchGenerator/TuningNotes.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/CompareDataTune10.m" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/CompareDataTune10.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/CompareDataTune11.m" beforeDir="false" afterPath="$PROJECT_DIR$/Box2dEnv/saves/CompareDataTune11.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/201-P33-20-PPO-1.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/201-P33-20-PPO-1.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/201-P33-20-PPO-1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/283-L23-23-PPO-1600.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/283-L23-23-PPO-1600.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/283-L23-23-PPO-1600.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/283-L23-23-PPO-1900.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/283-L23-23-PPO-1900.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/283-L23-23-PPO-1900.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/371-P33-27-PPO-1600.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/371-P33-27-PPO-1600.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/371-P33-27-PPO-1600.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/371-P33-27-PPO-2000.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/371-P33-27-PPO-2000.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/371-P33-27-PPO-2000.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/392-P33-26-PPO-1600.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/392-P33-26-PPO-1600.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/392-P33-26-PPO-1600.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/392-P33-26-PPO-1700.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/392-P33-26-PPO-1700.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/392-P33-26-PPO-1700.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-L33-20-PPO1/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-L33-20-PPO1/model.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-L33-20-PPO1/model.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-L33-20-PPO1/model.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P23-20-PPO1/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P23-20-PPO1/model.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P23-20-PPO1/model.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P23-20-PPO1/model.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P23-20-PPO1000/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P23-20-PPO1000/model.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P23-20-PPO1000/model.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P23-20-PPO1000/model.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P23-20-PPO500/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P23-20-PPO500/model.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P23-20-PPO500/model.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P23-20-PPO500/model.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-20-PPO-1.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-20-PPO-1.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-20-PPO-1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-20-PPO1/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-20-PPO1/model.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-20-PPO1/model.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-20-PPO1/model.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-28-PPO1/agent.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-28-PPO1/agent.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-28-PPO1/agent.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-28-PPO1/agent.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/999-P33-28-PPO1/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/saves/modelSave/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/savesMonitor/summary-20191018-105446/events.out.tfevents.1571392500.MSI.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/savesMonitor/summary-20191018-105717/events.out.tfevents.1571392650.MSI.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/savesMonitor/summary-20191018-163134/events.out.tfevents.1571412708.MSI.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/savesMonitor/summary-20191018-181252/events.out.tfevents.1571418789.MSI.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Box2dEnv/savesMonitor/summary-20191018-184528/events.out.tfevents.1571420749.MSI.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/configs/300-ppo.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/configs/300-ppo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/configs/ppo-new.json" beforeDir="false" afterPath="$PROJECT_DIR$/examples/configs/ppo-new.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Box2dEnv" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -27,24 +797,28 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1QByLynmesx4cKOTDVPAExCms88" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/conda/conda/envs/EnvTest/Lib/site-packages/tensorforce/agents" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Box2dEnv" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\genia\source\repos\Box2dEnv\Box2dEnv" />
       <recent name="C:\Users\genia\source\repos\Box2dEnv\examples" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\genia\source\repos\Box2dEnv\Box2dEnv" />
+      <recent name="C:\Users\genia\source\repos\Box2dEnv\examples\configs" />
       <recent name="C:\Users\genia\AppData\Local\conda\conda\envs\EnvTest\Lib\site-packages\tensorforce\agents" />
       <recent name="C:\Users\genia\AppData\Local\conda\conda\envs\EnvTest\Lib\site-packages\tensorforce\core\models" />
       <recent name="C:\Users\genia\AppData\Local\conda\conda\envs\EnvTest\Lib\site-packages\tensorforce\core\policies" />
-      <recent name="C:\Users\genia\source\repos\Box2dEnv\Box2dEnv" />
-      <recent name="C:\Users\genia\source\repos\Box2dEnv\examples\configs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -59,8 +833,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.TFTestNew">
-    <configuration name="TFTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Curious_PPO_cartpole">
+    <configuration name="Curious_PPO" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Box2dEnv" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -73,7 +847,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Box2dEnv/TFTest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Box2dEnv/Curious_PPO.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -82,7 +856,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="TFTestDist" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Curious_PPO_cartpole" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Box2dEnv" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,7 +869,51 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Box2dEnv/TFTestDist.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Box2dEnv/Curious_PPO_cartpole.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Curious_fit" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Box2dEnv" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Box2dEnv" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Box2dEnv/Curious_fit.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Lander_PPO" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Box2dEnv" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Box2dEnv" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Box2dEnv/Lander_PPO.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,11 +946,16 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Curious_PPO_cartpole" />
+        <item itemvalue="Python.Lander_PPO" />
+        <item itemvalue="Python.Curious_fit" />
+        <item itemvalue="Python.Curious_PPO" />
         <item itemvalue="Python.TFTestNew" />
-        <item itemvalue="Python.TFTest" />
-        <item itemvalue="Python.TFTestDist" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -198,7 +1021,28 @@
       <workItem from="1571131997172" duration="24844000" />
       <workItem from="1571224734209" duration="25461000" />
       <workItem from="1571390430254" duration="26841000" />
-      <workItem from="1571486613723" duration="258000" />
+      <workItem from="1571486613723" duration="2315000" />
+      <workItem from="1571495954123" duration="8957000" />
+      <workItem from="1571577600726" duration="565000" />
+      <workItem from="1571582863120" duration="12047000" />
+      <workItem from="1571734236564" duration="9016000" />
+      <workItem from="1571757154535" duration="12872000" />
+      <workItem from="1571817245264" duration="27165000" />
+      <workItem from="1571911188300" duration="32851000" />
+      <workItem from="1571955370292" duration="8093000" />
+      <workItem from="1571990917790" duration="10041000" />
+      <workItem from="1572005923338" duration="4794000" />
+      <workItem from="1572021049958" duration="15440000" />
+      <workItem from="1572080760819" duration="379000" />
+      <workItem from="1572081404663" duration="20137000" />
+      <workItem from="1572174978111" duration="20168000" />
+      <workItem from="1572284988068" duration="4447000" />
+      <workItem from="1572301910939" duration="19051000" />
+      <workItem from="1572364535194" duration="13694000" />
+      <workItem from="1572443055126" duration="15213000" />
+      <workItem from="1572526566098" duration="7794000" />
+      <workItem from="1572545912830" duration="5644000" />
+      <workItem from="1572616354328" duration="1034000" />
     </task>
     <servers />
   </component>
@@ -222,9 +1066,29 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$USER_HOME$/AppData/Local/conda/conda/envs/EnvTest/Lib/site-packages/tensorforce/core/models/curious_tensorforce.py</url>
-          <line>830</line>
-          <option name="timeStamp" value="206" />
+          <url>file://$PROJECT_DIR$/Box2dEnv/Curious_PPO.py</url>
+          <line>332</line>
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Box2dEnv/TuneScript-MCLc.py</url>
+          <line>462</line>
+          <option name="timeStamp" value="256" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Box2dEnv/Curious_PPO_cartpole.py</url>
+          <line>305</line>
+          <option name="timeStamp" value="261" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Box2dEnv/Curious_PPO_cartpole.py</url>
+          <line>304</line>
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Box2dEnv/Curious_PPO_cartpole.py</url>
+          <line>240</line>
+          <option name="timeStamp" value="265" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -237,13 +1101,18 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="self" language="Python" />
+        <watch expression="advantage_t" language="Python" />
+        <watch expression="curious_advantage_t" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Box2dEnv$TFTestDist.coverage" NAME="TFTestDist Coverage Results" MODIFIED="1568123470252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Box2dEnv" />
-    <SUITE FILE_PATH="coverage/Box2dEnv$TFTestNew.coverage" NAME="TFTestNew Coverage Results" MODIFIED="1571420725940" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Box2dEnv" />
-    <SUITE FILE_PATH="coverage/Box2dEnv$TFTest.coverage" NAME="TFTest Coverage Results" MODIFIED="1569419043480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Box2dEnv" />
+    <SUITE FILE_PATH="coverage/Box2dEnv$TFTestNew.coverage" NAME="TFTestNew Coverage Results" MODIFIED="1571850885892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Box2dEnv" />
+    <SUITE FILE_PATH="coverage/Box2dEnv$Curious_fit.coverage" NAME="Curious_fit Coverage Results" MODIFIED="1572191242984" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Box2dEnv" />
+    <SUITE FILE_PATH="coverage/Box2dEnv$Lander_PPO.coverage" NAME="Lander_PPO Coverage Results" MODIFIED="1572552977821" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Box2dEnv" />
+    <SUITE FILE_PATH="coverage/Box2dEnv$Curious_PPO.coverage" NAME="Curious_PPO Coverage Results" MODIFIED="1571941266379" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Box2dEnv" />
+    <SUITE FILE_PATH="coverage/Box2dEnv$Curious_PPO_cartpole.coverage" NAME="Curious_PPO_cartpole Coverage Results" MODIFIED="1572553504635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Box2dEnv" />
+    <SUITE FILE_PATH="coverage/Box2dEnv$TFTest.coverage" NAME="TFTest Coverage Results" MODIFIED="1571827195426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Box2dEnv" />
   </component>
 </project>

@@ -1,6 +1,8 @@
 <component name="ProjectDictionaryState">
   <dictionary name="genia">
     <words>
+      <w>cuda</w>
+      <w>probs</w>
       <w>timestep</w>
       <w>timesteps</w>
     </words>
