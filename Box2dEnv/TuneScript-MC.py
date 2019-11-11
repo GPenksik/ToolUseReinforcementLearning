@@ -4,7 +4,7 @@ import gym
 import torch
 import torch.nn as nn
 import numpy as np
-import Curious_net_actor_cont as Net_Actor
+import Curious_net_actor_cont_2 as Net_Actor
 import Curious_net_critic_cont as Net_Critic
 import Curious_net_rnd_conv as Net_rnd
 from collections import deque
@@ -69,12 +69,13 @@ def main():
     ac_net_pred = Net_rnd.Net(N_CURIOUS_STATES, N_CHANNELS_RND, N_HIDDEN_RND)
 
     criterion_val = nn.SmoothL1Loss()
+    # optimizer_c = torch.optim.Adam(ac_net_critic.parameters(), lr=0.0001, betas=(0.9, 0.999), eps=1e-08, weight_decay=0.00, amsgrad=False)
+    # optimizer_cc = torch.optim.Adam(ac_net_c_critic.parameters(), lr=0.0001, betas=(0.9, 0.999), eps=1e-08, weight_decay=0.00, amsgrad=False)
+    # optimizer_a = torch.optim.Adam(ac_net_actor.parameters(), lr=0.00001, betas=(0.9, 0.999), eps=1e-08, weight_decay=0.00, amsgrad=False)
 
     optimizer_c = torch.optim.SGD(ac_net_critic.parameters(), lr=0.001, momentum=0.9, nesterov=True)
     optimizer_cc = torch.optim.SGD(ac_net_c_critic.parameters(), lr=0.001, momentum=0.9, nesterov=True)
-
     optimizer_a = torch.optim.SGD(ac_net_actor.parameters(), lr=0.001, momentum=0.9, nesterov=True)
-
     optimizer_rnd = torch.optim.SGD(ac_net_pred.parameters(), lr=0.0005, momentum=0.0, nesterov=False)
 
     gamma1 = args.gamma_reward
@@ -144,6 +145,9 @@ def main():
 
         while i_in_batch < N_STEPS:  # START EPISODE BATCH LOOP
             cur_state = env.reset()
+            cur_state_copy = cur_state.copy()
+            cur_state_copy[1] = cur_state_copy[1]/0.035
+
             done = False
             ret = 0
             curious_ret = 0
@@ -155,6 +159,7 @@ def main():
 
             while not done:  # RUN SINGLE EPISODE
                 # Get parameters for distribution and assign action
+                # cur_state[1] = cur_state[1]/0.0035
                 torch_state = torch.tensor(cur_state).unsqueeze(0).float()
                 with torch.no_grad():
                     mu, sd = ac_net_actor(torch_state)
@@ -170,13 +175,16 @@ def main():
                 episode_distance_q.append(cur_state[0])
                 # Step environment
                 next_state, reward, done, info = env.step(clamped_action)
-
                 # Append values to queues
-                cur_state_q.append(cur_state)
-                next_cur_state_episode_q.append(next_state)
+                # Append values to queues
+                cur_state_q.append(cur_state_copy)
 
-                next_state_q.append(next_state)
-                reward_i = reward
+                next_state_copy = next_state.copy()
+                next_state_copy[1] = next_state_copy[1] / 0.035
+                next_cur_state_episode_q.append(next_state_copy)
+                next_state_q.append(next_state_copy)
+
+                reward_i = reward/20.0
                 reward_q.append(float(reward_i))
                 # value_q.append(val_out)
                 action_q.append(action.data.numpy())
@@ -187,6 +195,7 @@ def main():
 
                 # Iterate counters, etc
                 cur_state = next_state
+                cur_state_copy = next_state_copy
                 i_in_episode += 1
                 i_in_batch += 1
                 total_i += 1

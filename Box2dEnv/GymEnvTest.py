@@ -6,6 +6,10 @@ import gym
 #import env_test
 #envlander = gym.make('LunarLander-v2')
 env = gym.make('EnvTestContinuousR-v2')
+env.unwrapped.seed(20)
+env.unwrapped.set_repeat(1)
+env.unwrapped.set_task(1)
+env.unwrapped.set_random(1)
 
 #env.seed(1)
 env.reset()
@@ -18,14 +22,14 @@ cumulativeReward = 0
 
 while done == False:
     #action = [0.9*actionval,-actionval,0]
-    action = [0.0,-actionval,0]
+    action = [actionval, -actionval, 0]
 
     #action = [0,0,0]
-    if counter > 280:
+    if counter > 320:
         action = [-actionval,0,0]
-    if counter > 450:
+    if counter > 550:
         action = [0,actionval,-0.2]
-    if counter > 580:
+    if counter > 750:
         action = [0,0,0]
     #action = [0,-0.1,0]
     state, reward, done, [] = env.step(action)

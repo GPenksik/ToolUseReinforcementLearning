@@ -21,8 +21,13 @@ class Net(nn.Module):
         self.fc2 = nn.Linear(n_hidden_1, n_hidden_2)
         #self.fc3 = nn.Linear(n_hidden_2, n_hidden_3)
         self.outmu1 = nn.Linear(n_hidden_2, n_actions)
-        self.outmu1.weight.data.mul_(0.1)
+        # self.outmu1.weight.data.mul_(0.1)
         # torch.log(std)
+        torch.nn.init.kaiming_uniform_(self.fc2.weight.data)
+        torch.nn.init.kaiming_uniform_(self.fc1.weight.data)
+        torch.nn.init.kaiming_uniform_(self.outmu1.weight.data)
+        self.outmu1.weight.data.mul_(0.01)
+
         self.logstd = nn.Parameter(torch.add(torch.zeros(n_actions), 0))
 
     def forward(self, input):

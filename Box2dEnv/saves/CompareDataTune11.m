@@ -2,11 +2,11 @@ clear
 timestepStart = 1;
 timestepLimit = 2000;
 avgStep = 100; completeThreshold = 0.9;
-RL = [1 1 1 2 2 2 3 3 3] ; RndL = [1 2 3 1 2 3 1 2 3]; Tsk = ["P" "L"];
+RL = [1 2 3] ; RndL = [3 3 3]; Tsk = ["P" "L"];
 %RL = [3 2] ; RndL = [3 3];
 nParams = length(RL);
 runNumbers = [1:10];
-%runNumbers = [11:20];
+runNumbers = [11:20];
 %runNumbers = [201:209 273:275 210:218 276:278 ...
 %               219:227 279:281 228:236 282:284 ...
 %               237:245 285:287 246:254 288:290 ...
@@ -35,7 +35,11 @@ completed = cell([length(Tsk),nRuns,nParams]);
 for j=1:length(Tsk)
     for i=1:length(runNumbers)
         for k=1:nParams
-            Data{j,i,k} = ImportCSV(names(j,i,k), 1);
+            if names(j,i,k) == ""
+                Data{j,i,k} = zeros([timestepLimit - timestepStart + 1,1])
+            else
+                Data{j,i,k} = ImportCSV(names(j,i,k), 1);
+            end
             Data{j,i,k} = Data{j,i,k}(timestepStart:end);
             if (length(Data{j,i,k})>timestepLimit)
                 Data{j,i,k} = Data{j,i,k}(1:timestepLimit);
@@ -50,7 +54,7 @@ end
 figure(2)
 clf
 hold on
-j = 1;
+j = 2;
 for i=1:nParams
     plotNum = mod(i,nParams);
     if plotNum == 0 plotNum = nParams;, end;

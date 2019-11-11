@@ -42,7 +42,6 @@ warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 # python examples/openai_gym.py CartPole-v0 -a examples/configs/vpg.json -n examples/configs/mlp2_network.json -e 2000 -m 200
 
-
 def main():
 
     # start_time = time.time()

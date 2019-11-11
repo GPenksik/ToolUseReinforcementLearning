@@ -1,0 +1,21 @@
+#!/bin/bash
+# Scripty script
+
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 201 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 20 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 3 -sc 2
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 202 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 20 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 3 -sc 6
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 203 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 20 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 3 -sc 60
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 204 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 20 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 6 -sc 2
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 205 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 20 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 6 -sc 6
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 206 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 20 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 6 -sc 60
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 207 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 20 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 12 -sc 2
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 208 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 20 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 12 -sc 6
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 209 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 20 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 12 -sc 60
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 210 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 21 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 3 -sc 2
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 211 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 21 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 3 -sc 6
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 212 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 21 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 3 -sc 60
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 213 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 21 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 6 -sc 2
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 214 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 21 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 6 -sc 6
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 215 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 21 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 6 -sc 60
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 216 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 21 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 12 -sc 2
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 217 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 21 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 12 -sc 6
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 218 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 21 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 12 -sc 60

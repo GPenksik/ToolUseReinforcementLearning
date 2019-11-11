@@ -1,0 +1,9 @@
+#!/bin/bash
+# Scripty script
+
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 273 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 20 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 16 -sc 2
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 274 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 20 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 16 -sc 6
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 275 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 20 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 16 -sc 60
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 276 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 21 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 16 -sc 2
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 277 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 21 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 16 -sc 6
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/TuneScript-1L.py 278 EnvTestContinuousR-v2 -a 900-ppo.json -n 900-mlp2_network.json -e 2000 -t 10000000 -m 1000 -s modelSave -sd 21 -rn 3 -rl 3 -bt 24 -os 30 -bs 8 -ns 512 -rp 16 -sc 60

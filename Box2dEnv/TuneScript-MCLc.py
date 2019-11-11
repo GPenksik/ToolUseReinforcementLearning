@@ -39,8 +39,6 @@ def main():
 
     # SET BASIC PARAMETERS
 
-    sys.path.append(os.path.abspath("C:\\Users\\genia\\Source\\Repos\\Box2dEnv\\Box2dEnv"))
-
     env = gym.make('MountainCarContinuous-v0')
 
     load = False
@@ -52,7 +50,7 @@ def main():
     torch.set_printoptions(precision=3)
 
     # Initialise network and hyper params
-    device = torch.device("cpu" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cpu")
     # torch.set_default_tensor_type('torch.cuda.FloatTensor')
     torch.set_default_tensor_type('torch.FloatTensor')
     N_HIDDEN = args.network_size
@@ -242,6 +240,7 @@ def main():
         if first_batch:
             curious_reward_std = np.std(np.asarray(curious_reward_q))
             first_batch = False
+
 
 
         # START CUMULATIVE REWARD CALC

@@ -1,0 +1,39 @@
+- First tune rewards only: Reward Tune 1
+4 seeds
+
+Network size
+Gamma
+Optimization Steps
+Capacity
+Likelihood ratio
+
+(Using only main reward when car reaches top)
+
+- First tune curious only: Curious Tune 2
+4 seeds
+
+Gamma
+Capacity
+Likelihood
+Optimization Steps
+Random size
+
+(Using standard curious advantagewith mean and std. Full convolutional random state. Position and velocity state)
+
+- Second tune rewards only: Reward Tune 4
+
+Network size
+Gamma
+Optimization Steps
+Capacity
+Likelihood ratio
+
+(Using main reward only. Wider values)
+
+THINGS TO TEST:
+Curious reward with discounted reward instead of advantage (not likely to matter)
+Using only position for curious reward (unlikely to matter, though testing for appropriate advantage used this)
+
+*Use dense layers instead of convolution on curious state
+*Use basic single curious state with dense layers
+

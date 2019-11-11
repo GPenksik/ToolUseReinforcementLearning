@@ -2,6 +2,7 @@
   <dictionary name="genia">
     <words>
       <w>cuda</w>
+      <w>cumul</w>
       <w>probs</w>
       <w>timestep</w>
       <w>timesteps</w>

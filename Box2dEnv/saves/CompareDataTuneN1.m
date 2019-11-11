@@ -6,7 +6,7 @@ RL = [3 3] ; RndL = [3 3]; Tsk = ["P" "L"];
 %RL = [3 2] ; RndL = [3 3];
 nParams = length(RL);
 runNumbers = [400:455];
-%runNumbers = [456:511];
+runNumbers = [456:511];
 %runNumbers = [201:209 273:275 210:218 276:278 ...
 %               219:227 279:281 228:236 282:284 ...
 %               237:245 285:287 246:254 288:290 ...
@@ -59,7 +59,7 @@ end
 figure(2)
 clf
 hold on
-j_Task = 1;
+j_Task = 2;
 nHypers = 7;
 actualPlotNum = [4 5 6 1 9 2 8];
 for i_Run=1:nRuns
@@ -108,7 +108,7 @@ for j_Task = 1:length(Tsk)
         end
     end
 end
-%
+%%
 AvgDataC = mean(reshape(AvgData,nParams,[]),2);
 MaxDataC = mean(reshape(MaxData,nParams,[]),2);
 MaxCompetedC = mean(reshape(MaxCompeted,nParams,[]),2);
@@ -117,7 +117,7 @@ AvgDataCstd = std(reshape(AvgData,nParams,[]),0,2);
 MaxDataCstd = std(reshape(MaxData,nParams,[]),0,2);
 MaxCompetedCstd = std(reshape(MaxCompeted,nParams,[]),0,2);
 TotalCompletedCstd = std(reshape(TotalCompleted,nParams,[]),0,2);
-%%
+%
 figure(3)
 clf
 offset = 7;

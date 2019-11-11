@@ -198,14 +198,14 @@ def train(i, episodes, train=False, render = False):
                 batch_distribution = Normal(mu_batch, sd_batch)
                 exp_probs = batch_distribution.log_prob(batch_action_t).exp()
                 old_exp_probs = batch_action_log_prob_t.exp()
-                r_theta_i = torch.div(exp_probs,old_exp_probs)
+                r_theta_i = torch.div(exp_probs, old_exp_probs)
                 batch_advantage_t4 = batch_advantage_t.unsqueeze(1).expand_as(r_theta_i)
 
                 surrogate1 = r_theta_i*batch_advantage_t4
                 surrogate2 = torch.clamp(r_theta_i, 1 - epsilon, 1 + epsilon)*batch_advantage_t4
 
                 r_theta_surrogate_min = torch.min(surrogate1,surrogate2)
-                L_clip = -torch.sum(r_theta_surrogate_min)/r_theta_surrogate_min.size()[0]# - 0.00001*torch.mean(batch_distribution.entropy())
+                L_clip = -torch.sum(r_theta_surrogate_min)/r_theta_surrogate_min.size()[0]  # - 0.00001*torch.mean(batch_distribution.entropy())
                 optimizer_a.zero_grad()
                 L_clip.backward()
                 nn.utils.clip_grad_norm(ac_net_actor.parameters(),1)

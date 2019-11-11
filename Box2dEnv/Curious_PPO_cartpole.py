@@ -9,6 +9,7 @@ import Curious_net_critic_cont as Net_Critic
 import Curious_net_rnd_conv as Net_rnd
 from collections import deque
 from torch.distributions import Normal
+import matplotlib.pyplot as plt
 
 sys.path.append(os.path.abspath("C:\\Users\\genia\\Source\\Repos\\Box2dEnv\\Box2dEnv"))
 
@@ -26,7 +27,7 @@ torch.set_printoptions(precision=3)
 device = torch.device("cpu" if torch.cuda.is_available() else "cpu")
 # torch.set_default_tensor_type('torch.cuda.FloatTensor')
 torch.set_default_tensor_type('torch.FloatTensor')
-N_HIDDEN = 12
+N_HIDDEN = 128
 N_HIDDEN_RND = 32
 N_CHANNELS_RND = 32
 
@@ -49,19 +50,19 @@ optimizer_a = torch.optim.SGD(ac_net_actor.parameters(), lr=0.001, momentum=0.9,
 
 optimizer_rnd = torch.optim.SGD(ac_net_pred.parameters(), lr=0.0005, momentum=0.0, nesterov=False)
 
-gamma1 = 0.99
+gamma1 = 0.995
 gamma2 = 0.99
 
 return_time = 1
 
 N_STEPS = 10000
 # N_STEPS = 500
-N_TRAJECTORIES = 12
+N_TRAJECTORIES = 5
 K_epochs = 10
-B_epochs = 1
+B_epochs = 10
 R_epochs = 1
-N_MINI_BATCH = 1028
-epsilon = 0.2
+N_MINI_BATCH = 512
+epsilon = 0.05
 N_CURIOUS_BATCH = 256
 
 avg_reward = deque(maxlen=50)
@@ -84,8 +85,8 @@ def get_curious_state(curious_state, p1i, p2i):
     for x, p1x, p2x, p1y, p2y in zip(range(N_CURIOUS_STATES), p1i, p2i, reversed(p1i), reversed(p2i)):
         curious_state_t_new[:, x] = np.squeeze(
             p1x * np.cos(p2x * (-curious_state_1)) + p1y * np.sin(p2y * (-curious_state_1)))
-        curious_state_t_new[:, x] += np.squeeze(
-            p1x * np.cos(p2x * (-curious_state_2)) + p1y * np.sin(p2y * (-curious_state_2)))
+        # curious_state_t_new[:, x] += np.squeeze(
+        #     p1x * np.cos(p2x * (-curious_state_2)) + p1y * np.sin(p2y * (-curious_state_2)))
     return torch.tensor(curious_state_t_new).float()
 
 
@@ -114,6 +115,9 @@ def train(episodes):
 
         while i_in_batch < N_STEPS:  # START EPISODE BATCH LOOP
             cur_state = env.reset()
+            cur_state_copy = cur_state.copy()
+            cur_state_copy[1] = cur_state_copy[1]/0.035
+
             done = False
             ret = 0
             curious_ret = 0
@@ -122,7 +126,7 @@ def train(episodes):
             next_cur_state_episode_q = []
             while not done:  # RUN SINGLE EPISODE
                 # Get parameters for distribution and assign action
-                torch_state = torch.tensor(cur_state).unsqueeze(0).float()
+                torch_state = torch.tensor(cur_state_copy).unsqueeze(0).float()
                 with torch.no_grad():
                     mu, sd = ac_net_actor(torch_state)
                     # val_out = ac_net_critic(torch_state)
@@ -130,20 +134,23 @@ def train(episodes):
                 distribution = Normal(mu[0], sd[0])
                 action = distribution.sample()
                 if episode_i < 15:
-                    clamped_action = torch.clamp(action, -1, 1).data.numpy()
+                    clamped_action = torch.clamp(action, min=-1, max=1).data.numpy()
                 else:
-                    clamped_action = torch.clamp(action, -1, 1).data.numpy()
+                    clamped_action = torch.clamp(action, min=-1, max=1).data.numpy()
 
                 episode_distance_q.append(cur_state[0])
                 # Step environment
                 next_state, reward, done, info = env.step(clamped_action)
 
                 # Append values to queues
-                cur_state_q.append(cur_state)
-                next_cur_state_episode_q.append(next_state)
+                cur_state_q.append(cur_state_copy)
 
-                next_state_q.append(next_state)
-                reward_i = reward
+                next_state_copy = next_state.copy()
+                next_state_copy[1] = next_state_copy[1]/0.035
+                next_cur_state_episode_q.append(next_state_copy)
+                next_state_q.append(next_state_copy)
+
+                reward_i = reward/20.0
                 reward_q.append(float(reward_i))
                 # value_q.append(val_out)
                 action_q.append(action.data.numpy())
@@ -154,6 +161,7 @@ def train(episodes):
 
                 # Iterate counters, etc
                 cur_state = next_state
+                cur_state_copy = next_state_copy
                 i_in_episode += 1
                 i_in_batch += 1
                 total_i += 1
@@ -212,13 +220,13 @@ def train(episodes):
         cul_curious_reward = 0
         for reward, cur_reward, done, in zip(reversed(reward_q), reversed(curious_reward_q), reversed(done_q)):
             if done == 1:
-                cul_curious_reward = cul_curious_reward*gamma2 + cur_reward
                 cul_reward = cul_reward*gamma1 + reward
+                cul_curious_reward = cul_curious_reward*gamma2 + cur_reward
                 discounted_reward.insert(0, cul_reward)
                 discounted_curious_reward.insert(0, cul_curious_reward)
             elif done == 0:
                 cul_reward = reward
-                cul_curious_reward = cur_reward*gamma2 + reward
+                cul_curious_reward = cul_curious_reward*gamma2 + cur_reward
                 discounted_reward.insert(0, cul_reward)
                 discounted_curious_reward.insert(0, cul_curious_reward)
 
@@ -239,8 +247,14 @@ def train(episodes):
         curious_advantage_q_new = np.asarray(curious_advantage_q_new)
 
         advantage_q_new = (advantage_q_new-np.mean(advantage_q_new))/(np.std(advantage_q_new))  # Should advantage be recalculated at each optimize step?
-        curious_advantage_q_new = (curious_advantage_q_new-np.mean(curious_advantage_q_new))/(np.std(curious_advantage_q_new))  # Should advantage be recalculated at each optimize step?
-        # curious_advantage_q_new = (np.asarray(discounted_curious_reward) -np.mean(discounted_curious_reward))/(np.std(discounted_curious_reward))  # Should advantage be recalculated at each optimize step?
+        # curious_advantage_q_new = (curious_advantage_q_new-np.mean(curious_advantage_q_new))/(np.std(curious_advantage_q_new))  # Should advantage be recalculated at each optimize step?
+        curious_advantage_q_new = (np.asarray(discounted_curious_reward) - np.mean(discounted_curious_reward))/(np.std(discounted_curious_reward))  # Should advantage be recalculated at each optimize step?
+
+        plotted_data = np.transpose(np.asarray((np.asarray(cur_state_q)[:, 0], np.squeeze(discounted_curious_reward))))
+        plotted_data = np.transpose(np.asarray((np.asarray(cur_state_q)[:, 0], np.squeeze(curious_advantage_q_new))))
+
+        plt.plot(plotted_data)
+        # plt.show()
 
         max_curious_advantage = np.max(curious_advantage_q_new)
         std_curious_advantage = np.std(curious_advantage_q_new)
@@ -369,8 +383,11 @@ def train(episodes):
                 surrogate1 = r_theta_i * batch_advantage_t4
                 surrogate2 = torch.clamp(r_theta_i, 1 - epsilon, 1 + epsilon) * batch_advantage_t4
 
+                batch_entropy = batch_distribution.entropy()
+                batch_entropy_loss = torch.mean(batch_entropy)
+
                 r_theta_surrogate_min = torch.min(surrogate1, surrogate2)
-                L_clip = -torch.sum(r_theta_surrogate_min) / r_theta_surrogate_min.size()[0]
+                L_clip = -torch.sum(r_theta_surrogate_min) / r_theta_surrogate_min.size()[0]  + 0.05 * batch_entropy_loss
                 optimizer_a.zero_grad()
                 L_clip.backward()
                 optimizer_a.step()
@@ -426,13 +443,14 @@ def train(episodes):
         # print("")
 
         if episode_i % return_time == 0:
-            print("%4d | %6.0d | %6.1f, %6.1f | %6.1f, %6.1f | %6.2f, %6.2f, %6.2f | %6.2f, %6.2f, %6.2f | %6.2f, %6.2f"
+            print("%4d | %6.0d | %6.1f, %6.1f | %6.1f, %6.1f | %6.2f, %6.2f, %6.2f | %6.2f, %6.2f, %6.2f | %6.2f, %6.2f | %6.2f"
                   % (episode_i, total_i,
                      np.mean(avg_reward_batch), np.mean(avg_reward),
                      np.mean(avg_curious_reward_batch), np.mean(avg_curious_reward),
                      max_advantage, mean_advantage, std_advantage,
                      max_curious_advantage, mean_curious_advantage, std_curious_advantage,
-                     max_achieved_height_in_batch, np.mean(avg_max_height_q)))
+                     max_achieved_height_in_batch, np.mean(avg_max_height_q),
+                     torch.mean(batch_entropy).item()))
         # END UPDATING ACTOR
 
     return episode_i
