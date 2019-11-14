@@ -5,6 +5,7 @@ avgStep = 100; completeThreshold = 0.9;
 RL = [3 2 1 3 2 1] ; RndL = [3 3 3 2 2 2]; Tsk = ["P" "L"];
 runNumbers = [4100:4105];
 % runNumbers = [4010:4018];
+% runNumbers = [4020:4027]
 seeds = [20:27];
 nSeeds = length(seeds);
 
@@ -34,7 +35,7 @@ for m = 1:length(Tsk)
         %end
     end
 end
-%%
+%
 nRuns = length(runNumbers);
 maxReward = 6.0
 completedThreshold = completeThreshold*maxReward;
@@ -65,7 +66,7 @@ end
 figure(2)
 clf
 hold on
-j = 2;
+j = 1;
 nSeeds = length(seeds);
 for i=1:nRuns
     plotNum = mod(i,nRuns);

@@ -21,22 +21,22 @@ class Net(nn.Module):
         self.fc2 = nn.Linear(n_hidden_1, n_hidden_2)
         #self.fc3 = nn.Linear(n_hidden_2, n_hidden_3)
         self.outmu1 = nn.Linear(n_hidden_2, n_actions)
-        #self.outmu1.weight.data.mul_(0.1)
-        self.outmu2 = nn.Linear(n_hidden_2, n_actions)
-        #self.outmu2.weight.data.mul_(0.1)
-        #self.outlogstd1 = nn.Linear(n_hidden_2, n_actions)
-        # self.outlogstd1.weight.data = torch.mul(self.outlogstd1.weight.data, 0.1)
-        # torch.log(std)
-        #self.logstd = nn.Parameter(torch.add(torch.zeros(n_actions), 0))
+        torch.nn.init.kaiming_uniform_(self.fc2.weight.data)
+        torch.nn.init.kaiming_uniform_(self.fc1.weight.data)
+        torch.nn.init.kaiming_uniform_(self.outmu1.weight.data)
+        self.outmu1.weight.data.mul_(0.01)
+
+        self.logstd = nn.Parameter(torch.add(torch.zeros(n_actions), -0.7))
 
     def forward(self, input):
         x = F.tanh(self.fc1(input))
         x = F.tanh(self.fc2(x))
         #x = F.tanh(self.fc3(x))
-        mu1 = torch.abs((self.outmu1(x)) + 2) + 0.1  # *1.1
-        mu2 = torch.abs((self.outmu2(x)) + 2) + 0.1  # *1.1
+        mu = F.tanh(self.outmu1(x))*1
+        logstd = self.logstd.expand_as(mu)
+        std = torch.exp(logstd)
 
-        return mu1, mu2
+        return mu, std
 
     def num_flat_features(self, x):
         size = x.size()[1:]  # all dimensions except the batch dimension

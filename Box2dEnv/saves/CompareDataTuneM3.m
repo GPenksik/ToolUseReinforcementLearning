@@ -61,7 +61,7 @@ end
 figure(2)
 clf
 hold on
-j = 2;
+j = 1;
 nSeeds = length(seeds);
 for i=1:nRuns
     plotNum = mod(i,nRuns);

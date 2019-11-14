@@ -4,7 +4,7 @@ import gym
 import torch
 import torch.nn as nn
 import numpy as np
-import Curious_net_actor_cont as Net_Actor
+import Curious_net_actor_cont_2 as Net_Actor
 import Curious_net_critic_cont as Net_Critic
 import Curious_net_rnd_conv as Net_rnd
 from collections import deque
@@ -32,6 +32,7 @@ N_HIDDEN_RND = 32
 N_CHANNELS_RND = 32
 
 random_seed = 20
+CURIOUS = True
 torch.manual_seed(random_seed)
 np.random.seed(random_seed)
 
@@ -46,7 +47,7 @@ criterion_val = nn.SmoothL1Loss()
 optimizer_c = torch.optim.SGD(ac_net_critic.parameters(), lr=0.001, momentum=0.9, nesterov=True)
 optimizer_cc = torch.optim.SGD(ac_net_c_critic.parameters(), lr=0.001, momentum=0.9, nesterov=True)
 
-optimizer_a = torch.optim.SGD(ac_net_actor.parameters(), lr=0.001, momentum=0.9, nesterov=True)
+optimizer_a = torch.optim.SGD(ac_net_actor.parameters(), lr=0.0001, momentum=0.9, nesterov=True)
 
 optimizer_rnd = torch.optim.SGD(ac_net_pred.parameters(), lr=0.0005, momentum=0.0, nesterov=False)
 
@@ -58,11 +59,11 @@ return_time = 1
 N_STEPS = 10000
 # N_STEPS = 500
 N_TRAJECTORIES = 5
-K_epochs = 10
-B_epochs = 10
+K_epochs = 5
+B_epochs = 2
 R_epochs = 1
 N_MINI_BATCH = 512
-epsilon = 0.05
+epsilon = 0.1
 N_CURIOUS_BATCH = 256
 
 avg_reward = deque(maxlen=50)
@@ -356,10 +357,15 @@ def train(episodes):
                 # Gather data from saved tensors
                 batch_state_t = torch.index_select(current_state_t, 0, batch_idx).float()
                 if np.max(reward_q) > 0.01:
-                    batch_advantage_t = torch.index_select(advantage_t, 0, batch_idx)
+                    if CURIOUS:
+                        batch_advantage_t = torch.index_select(summed_advantage_t, 0, batch_idx)
+                    else:
+                        batch_advantage_t = torch.index_select(advantage_t, 0, batch_idx)
                 else:
-                    batch_advantage_t = torch.index_select(advantage_t, 0, batch_idx)
-                    # batch_advantage_t = torch.index_select(curious_advantage_t, 0, batch_idx)
+                    if CURIOUS:
+                        batch_advantage_t = torch.index_select(curious_advantage_t, 0, batch_idx)
+                    else:
+                        batch_advantage_t = torch.index_select(advantage_t, 0, batch_idx)
 
                 # batch_advantage_t = torch.index_select(summed_advantage_t, 0, batch_idx)
 
@@ -387,7 +393,7 @@ def train(episodes):
                 batch_entropy_loss = torch.mean(batch_entropy)
 
                 r_theta_surrogate_min = torch.min(surrogate1, surrogate2)
-                L_clip = -torch.sum(r_theta_surrogate_min) / r_theta_surrogate_min.size()[0]  + 0.05 * batch_entropy_loss
+                L_clip = -torch.sum(r_theta_surrogate_min) / r_theta_surrogate_min.size()[0] + 0.03 * batch_entropy_loss
                 optimizer_a.zero_grad()
                 L_clip.backward()
                 optimizer_a.step()

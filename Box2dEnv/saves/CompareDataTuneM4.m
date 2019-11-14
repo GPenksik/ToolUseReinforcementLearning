@@ -5,7 +5,7 @@ avgStep = 100; completeThreshold = 0.9;
 RL = [2] ; RndL = [3]; Tsk = ["P" "L"];
 runNumbers = [5010:5020];
 runNumbers = [5021:5031];
-runNumbers = [5041:5051]
+runNumbers = [5041:5051];
 seeds = [20:23];
 nSeeds = length(seeds);
 

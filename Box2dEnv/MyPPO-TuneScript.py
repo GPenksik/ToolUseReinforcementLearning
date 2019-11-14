@@ -33,7 +33,7 @@ env.unwrapped.set_reward(2)
 env.unwrapped.set_random(3)
 env.unwrapped.set_task(1)
 env.unwrapped.seed(random_seed)
-env.unwrapped.set_repeat(12)
+env.unwrapped.set_repeat(10)
 
 load = False
 return_time = 1
@@ -45,24 +45,25 @@ N_ACTIONS = 3
 
 # Initialise network and hyper params
 # TODO set args
-ac_net_critic = Net_Critic.Net(N_STATES, 256)
-ac_net_actor = Net_Actor.Net(N_STATES, N_ACTIONS, 256)
+ac_net_critic = Net_Critic.Net(N_STATES, 196)
+ac_net_actor = Net_Actor.Net(N_STATES, N_ACTIONS, 196)
 
 criterion_val = nn.MSELoss()
-# optimizer_c = torch.optim.Adam(ac_net_critic.parameters(), lr=0.0001, betas=(0.9, 0.999), eps=1e-08, weight_decay=0.00, amsgrad=False)
-# optimizer_a = torch.optim.Adam(ac_net_actor.parameters(), lr=0.00001, betas=(0.9, 0.999), eps=1e-08, weight_decay=0.00, amsgrad=False)
-optimizer_c = torch.optim.SGD(ac_net_critic.parameters(), lr=0.001, momentum=0.9, nesterov=True)
-optimizer_a = torch.optim.SGD(ac_net_actor.parameters(), lr=0.001, momentum=0.9, nesterov=True)
+optimizer_c = torch.optim.Adam(ac_net_critic.parameters(), lr=0.0001, betas=(0.9, 0.999), eps=1e-08, weight_decay=0.00, amsgrad=False)
+optimizer_a = torch.optim.Adam(ac_net_actor.parameters(), lr=0.0001, betas=(0.9, 0.999), eps=1e-08, weight_decay=0.00, amsgrad=False)
+# optimizer_c = torch.optim.SGD(ac_net_critic.parameters(), lr=0.001, momentum=0.9, nesterov=True)
+# optimizer_a = torch.optim.SGD(ac_net_actor.parameters(), lr=0.001, momentum=0.9, nesterov=True)
 
 # TODO Set optimizer args
 gamma = 0.95
 
-N_STEPS = 6000
-N_TRAJECTORIES = 20
-K_epochs = 20
-B_epochs = 8
-N_MINI_BATCH = 512
-epsilon = 0.2
+# N_STEPS = 6000
+N_TRAJECTORIES = 25
+K_EPOCHS = 4
+B_EPOCHS = 1
+N_MINI_BATCH = 128
+EPSILON = 0.2
+N_ACTIONS_PER_EPISODE = 500
 
 # Initialize tracking queus
 avg_reward = deque(maxlen=100)
@@ -90,7 +91,7 @@ def train(episodes):
         episode_in_batch = 0
         i_in_batch = 0
 
-        #while i_in_batch < N_STEPS:  # START EPISODE BATCH LOOP
+        # while i_in_batch < N_STEPS:  # START EPISODE BATCH LOOP
         while episode_in_batch < N_TRAJECTORIES:
             # Reset environment and get first state
             cur_state = env.reset()
@@ -184,7 +185,7 @@ def train(episodes):
         # START UPDATING NETWORKS
 
         # START BASELINE OPTIMIZE
-        for epoch in range(B_epochs):
+        for epoch in range(B_EPOCHS):
             # Get random permutation of indexes
             indexes = torch.tensor(np.random.permutation(batch_length)).type(torch.LongTensor)
             n_batch = 0
@@ -221,7 +222,7 @@ def train(episodes):
         # END BASELINE OPTIMIZE
 
         # START POLICY OPTIMIZE
-        for epoch in range(K_epochs):
+        for epoch in range(K_EPOCHS):
             # Get random permutation of indexes
             indexes = torch.tensor(np.random.permutation(batch_length)).type(torch.LongTensor)
             n_batch = 0
@@ -256,12 +257,16 @@ def train(episodes):
 
                 # Calculate the options
                 surrogate1 = r_theta_i * batch_advantage_t4
-                surrogate2 = torch.clamp(r_theta_i, 1 - epsilon, 1 + epsilon) * batch_advantage_t4
+                surrogate2 = torch.clamp(r_theta_i, 1 - EPSILON, 1 + EPSILON) * batch_advantage_t4
                 batch_entropy = batch_distribution.entropy()
                 batch_entropy_loss = torch.mean(batch_entropy)
+
                 # Choose minimum of surrogates and calculate L_clip as final loss function
                 r_theta_surrogate_min = torch.min(surrogate1, surrogate2)
                 L_clip = -torch.sum(r_theta_surrogate_min) / r_theta_surrogate_min.size()[0]  # + 0.05 * batch_entropy_loss
+
+                # if batch_entropy_loss > 1.2:
+                #     L_clip = L_clip + 0.05 * batch_entropy_loss
 
                 # Optimize
                 optimizer_a.zero_grad()

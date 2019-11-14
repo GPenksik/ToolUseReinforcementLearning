@@ -79,10 +79,10 @@ def main():
     gamma = args.gamma
 
     N_TRAJECTORIES = args.batch_size
-    K_epochs = args.optimization_steps
-    B_epochs = args.baseline_steps
+    K_EPOCHS = args.optimization_steps
+    B_EPOCHS = args.baseline_steps
     N_MINI_BATCH = args.mini_batch
-    epsilon = args.epsilon
+    EPSILON = args.epsilon
 
     # Initialize tracking queues
     avg_reward = deque(maxlen=100)
@@ -214,7 +214,7 @@ def main():
         # START UPDATING NETWORKS
 
         # START BASELINE OPTIMIZE
-        for epoch in range(B_epochs):
+        for epoch in range(B_EPOCHS):
             # Get random permutation of indexes
             indexes = torch.tensor(np.random.permutation(batch_length)).type(torch.LongTensor)
             n_batch = 0
@@ -251,7 +251,7 @@ def main():
         # END BASELINE OPTIMIZE
 
         # START POLICY OPTIMIZE
-        for epoch in range(K_epochs):
+        for epoch in range(K_EPOCHS):
             # Get random permutation of indexes
             indexes = torch.tensor(np.random.permutation(batch_length)).type(torch.LongTensor)
             n_batch = 0
@@ -286,7 +286,7 @@ def main():
 
                 # Calculate the options
                 surrogate1 = r_theta_i * batch_advantage_t4
-                surrogate2 = torch.clamp(r_theta_i, 1 - epsilon, 1 + epsilon) * batch_advantage_t4
+                surrogate2 = torch.clamp(r_theta_i, 1 - EPSILON, 1 + EPSILON) * batch_advantage_t4
 
                 # Calculate batch entropy
                 batch_entropy = batch_distribution.entropy()

@@ -7,7 +7,7 @@ import gym
 #envlander = gym.make('LunarLander-v2')
 env = gym.make('EnvTestContinuousR-v2')
 env.unwrapped.seed(20)
-env.unwrapped.set_repeat(1)
+env.unwrapped.set_repeat(12)
 env.unwrapped.set_task(1)
 env.unwrapped.set_random(1)
 
@@ -25,12 +25,12 @@ while done == False:
     action = [actionval, -actionval, 0]
 
     #action = [0,0,0]
-    if counter > 320:
-        action = [-actionval,0,0]
-    if counter > 550:
-        action = [0,actionval,-0.2]
-    if counter > 750:
-        action = [0,0,0]
+    if counter > 300/12:
+        action = [-actionval, 0, 0]
+    if counter > 570/12:
+        action = [0, 0.6*actionval, -0.2]
+    if counter > 900/12:
+        action = [0, 0, 0]
     #action = [0,-0.1,0]
     state, reward, done, [] = env.step(action)
     a = env.render()
