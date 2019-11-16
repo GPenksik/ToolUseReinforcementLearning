@@ -28,11 +28,11 @@ device = torch.device("cpu" if torch.cuda.is_available() else "cpu")
 # torch.set_default_tensor_type('torch.cuda.FloatTensor')
 torch.set_default_tensor_type('torch.FloatTensor')
 N_HIDDEN = 128
-N_HIDDEN_RND = 32
-N_CHANNELS_RND = 32
+N_HIDDEN_RND = 64
+N_CHANNELS_RND = 64
 
 random_seed = 20
-CURIOUS = True
+CURIOUS = False
 torch.manual_seed(random_seed)
 np.random.seed(random_seed)
 
@@ -49,7 +49,7 @@ optimizer_cc = torch.optim.SGD(ac_net_c_critic.parameters(), lr=0.001, momentum=
 
 optimizer_a = torch.optim.SGD(ac_net_actor.parameters(), lr=0.0001, momentum=0.9, nesterov=True)
 
-optimizer_rnd = torch.optim.SGD(ac_net_pred.parameters(), lr=0.0005, momentum=0.0, nesterov=False)
+optimizer_rnd = torch.optim.SGD(ac_net_pred.parameters(), lr=0.001, momentum=0.0, nesterov=False)
 
 gamma1 = 0.995
 gamma2 = 0.99
@@ -59,12 +59,12 @@ return_time = 1
 N_STEPS = 10000
 # N_STEPS = 500
 N_TRAJECTORIES = 5
-K_epochs = 5
+K_epochs = 2
 B_epochs = 2
 R_epochs = 1
 N_MINI_BATCH = 512
-epsilon = 0.1
-N_CURIOUS_BATCH = 256
+epsilon = 0.05
+N_CURIOUS_BATCH = 1028
 
 avg_reward = deque(maxlen=50)
 avg_curious_reward = deque(maxlen=50)
@@ -75,7 +75,7 @@ avg_reward_STD = deque()
 avg_value_STD = deque()
 
 p1 = np.random.normal(0, 5, (N_CURIOUS_STATES, 1))
-p2 = np.random.normal(0, 15, (N_CURIOUS_STATES, 1))
+p2 = np.random.normal(0, 2, (N_CURIOUS_STATES, 1))
 
 
 
@@ -85,7 +85,7 @@ def get_curious_state(curious_state, p1i, p2i):
     curious_state_2 = curious_state[:, 1]/0.07
     for x, p1x, p2x, p1y, p2y in zip(range(N_CURIOUS_STATES), p1i, p2i, reversed(p1i), reversed(p2i)):
         curious_state_t_new[:, x] = np.squeeze(
-            p1x * np.cos(p2x * (-curious_state_1)) + p1y * np.sin(p2y * (-curious_state_1)))
+            p1x * np.cos(p2x + (-curious_state_1)) + p1y * np.sin(p2y + (-curious_state_1)))
         # curious_state_t_new[:, x] += np.squeeze(
         #     p1x * np.cos(p2x * (-curious_state_2)) + p1y * np.sin(p2y * (-curious_state_2)))
     return torch.tensor(curious_state_t_new).float()
@@ -255,7 +255,7 @@ def train(episodes):
         plotted_data = np.transpose(np.asarray((np.asarray(cur_state_q)[:, 0], np.squeeze(curious_advantage_q_new))))
 
         plt.plot(plotted_data)
-        # plt.show()
+        plt.show()
 
         max_curious_advantage = np.max(curious_advantage_q_new)
         std_curious_advantage = np.std(curious_advantage_q_new)

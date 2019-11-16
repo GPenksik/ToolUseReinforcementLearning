@@ -26,7 +26,7 @@ class Net(nn.Module):
         torch.nn.init.kaiming_uniform_(self.outmu1.weight.data)
         self.outmu1.weight.data.mul_(0.01)
 
-        self.logstd = nn.Parameter(torch.add(torch.zeros(n_actions), -0.7))
+        self.logstd = nn.Parameter(torch.add(torch.zeros(n_actions), 0))
 
     def forward(self, input):
         x = F.tanh(self.fc1(input))

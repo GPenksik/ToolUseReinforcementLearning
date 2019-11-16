@@ -24,7 +24,7 @@ class Net(nn.Module):
         torch.nn.init.kaiming_uniform_(self.fc2.weight.data)
         torch.nn.init.kaiming_uniform_(self.fc1.weight.data)
         torch.nn.init.kaiming_uniform_(self.outmu1.weight.data)
-        self.outmu1.weight.data.mul_(0.01)
+        self.outmu1.weight.data.mul_(0.001)
 
         self.logstd = nn.Parameter(torch.add(torch.zeros(n_actions), 0))
 

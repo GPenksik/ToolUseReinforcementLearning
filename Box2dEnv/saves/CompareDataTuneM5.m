@@ -37,7 +37,7 @@ for m = 1:length(Tsk)
 end
 %
 nRuns = length(runNumbers);
-maxReward = 6.0
+maxReward = 6.0;
 completedThreshold = completeThreshold*maxReward;
 Data = cell([length(Tsk),nRuns,nSeeds]);
 meanData  = cell([length(Tsk),nRuns,nSeeds]);
@@ -66,7 +66,7 @@ end
 figure(2)
 clf
 hold on
-j = 1;
+j = 2;
 nSeeds = length(seeds);
 for i=1:nRuns
     plotNum = mod(i,nRuns);

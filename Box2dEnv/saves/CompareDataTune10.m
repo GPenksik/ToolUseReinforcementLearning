@@ -1,9 +1,9 @@
 clear
 timestepStart = 1;
-timestepLimit = 2000;
+timestepLimit = 1000;
 avgStep = 100; completeThreshold = 0.9;
-RL = [1 2 3] ; RndL = [3 3 3]; Tsk = ["P" "L"];
-nParams = 2;
+RL = [1 2 3 1 2 3 1 2 3] ; RndL = [1 1 1 2 2 2 3 3 3]; Tsk = ["P" "L"];
+nParams = 9;
 runNumbers = [1:10];
 %runNumbers = [11:20];
 %runNumbers = [201:209 273:275 210:218 276:278 ...
@@ -23,7 +23,7 @@ for m = 1:length(Tsk)
         end
     end
 end
-%%
+%
 nRuns = length(names);
 completedThreshold = completeThreshold*6.0;
 Data = cell([length(Tsk),nRuns,nParams]);
@@ -45,7 +45,7 @@ for j=1:length(Tsk)
         end
     end
 end
-%%
+%
 figure(2)
 clf
 hold on
