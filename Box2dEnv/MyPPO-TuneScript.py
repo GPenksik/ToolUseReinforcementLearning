@@ -4,7 +4,7 @@ import gym
 import torch
 import torch.nn as nn
 import numpy as np
-import Curious_net_actor_cont as Net_Actor
+import Curious_net_actor_cont_3 as Net_Actor
 import Curious_net_critic_cont as Net_Critic
 from collections import deque
 from torch.distributions import Normal
@@ -33,7 +33,7 @@ env.unwrapped.set_reward(2)
 env.unwrapped.set_random(3)
 env.unwrapped.set_task(1)
 env.unwrapped.seed(random_seed)
-env.unwrapped.set_repeat(10)
+env.unwrapped.set_repeat(1)
 
 load = False
 return_time = 1
@@ -58,10 +58,10 @@ optimizer_a = torch.optim.Adam(ac_net_actor.parameters(), lr=0.0001, betas=(0.9,
 gamma = 0.95
 
 # N_STEPS = 6000
-N_TRAJECTORIES = 25
+N_TRAJECTORIES = 50
 K_EPOCHS = 4
 B_EPOCHS = 1
-N_MINI_BATCH = 128
+N_MINI_BATCH = 2000
 EPSILON = 0.2
 N_ACTIONS_PER_EPISODE = 500
 
@@ -112,34 +112,35 @@ def train(episodes):
                 clamped_action_t = torch.clamp(action, -1.0, 1.0)
                 clamped_action = clamped_action_t.data.numpy()
 
-                # Step environment
-                next_state, reward, done, info = env.step(clamped_action)
+                for action_count in range(10):
+                    # Step environment
+                    next_state, reward, done, info = env.step(clamped_action)
 
-                # Append values to queues
-                current_state_q.append(cur_state)
-                next_state_q.append(next_state)
-                reward_q.append(float(reward))
-                value_q.append(val_out)
-                action_q.append(clamped_action)
-                action_log_prob_q.append(distribution.log_prob(clamped_action_t).data.numpy())
-                done_q.append(1-done)
+                    # Append values to queues
+                    current_state_q.append(cur_state)
+                    next_state_q.append(next_state)
+                    reward_q.append(float(reward))
+                    value_q.append(val_out)
+                    action_q.append(clamped_action)
+                    action_log_prob_q.append(distribution.log_prob(clamped_action_t).data.numpy())
+                    done_q.append(1-done)
 
-                ret += reward  # Sum total reward for episode
+                    ret += reward  # Sum total reward for episode
 
-                # Iterate counters, etc
-                cur_state = next_state
-                i_in_episode += 1
-                i_in_batch += 1
-                total_i += 1
+                    # Iterate counters, etc
+                    cur_state = next_state
+                    i_in_episode += 1
+                    i_in_batch += 1
+                    total_i += 1
 
-                if i_in_episode % 1 == 0 and episode_i % 5 == 0 and episode_i >= 0:
-                    env.render()
+                    if i_in_episode % 10 == 0 and episode_i % 25 == 0 and episode_i >= 0:
+                        env.render()
 
-                # TODO get args
-                if i_in_episode > 500:
-                    done = True
-                if done:
-                    break
+                    # TODO get args
+                    if i_in_episode > 3000:
+                        done = True
+                    if done:
+                        break
 
             # END SINGLE EPISODE
 
@@ -169,7 +170,6 @@ def train(episodes):
         action_log_prob_t = torch.tensor(action_log_prob_q).float()
         action_t = torch.tensor(action_q).float()
         reward_t = torch.tensor(discounted_reward).float()
-
 
         # CALCULATE ADVANTAGE
         value_t_new = ac_net_critic(current_state_t)
@@ -259,11 +259,11 @@ def train(episodes):
                 surrogate1 = r_theta_i * batch_advantage_t4
                 surrogate2 = torch.clamp(r_theta_i, 1 - EPSILON, 1 + EPSILON) * batch_advantage_t4
                 batch_entropy = batch_distribution.entropy()
-                batch_entropy_loss = torch.mean(batch_entropy)
+                batch_entropy_loss = torch.mean(torch.pow(batch_entropy, 2))
 
                 # Choose minimum of surrogates and calculate L_clip as final loss function
                 r_theta_surrogate_min = torch.min(surrogate1, surrogate2)
-                L_clip = -torch.sum(r_theta_surrogate_min) / r_theta_surrogate_min.size()[0]  # + 0.05 * batch_entropy_loss
+                L_clip = -torch.sum(r_theta_surrogate_min) / r_theta_surrogate_min.size()[0] + 0.03 * batch_entropy_loss
 
                 # if batch_entropy_loss > 1.2:
                 #     L_clip = L_clip + 0.05 * batch_entropy_loss

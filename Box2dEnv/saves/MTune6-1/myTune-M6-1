@@ -1,0 +1,54 @@
+#!/bin/bash
+# Scripty script
+
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6100  -e 1000  -sd 20  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.03 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6100  -e 1000  -sd 21  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.03 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6100  -e 1000  -sd 22  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.03 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6100  -e 1000  -sd 23  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.03 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6100  -e 1000  -sd 24  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.03 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6101  -e 1000  -sd 20  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.04 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6101  -e 1000  -sd 21  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.04 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6101  -e 1000  -sd 22  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.04 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6101  -e 1000  -sd 23  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.04 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6101  -e 1000  -sd 24  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.04 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6102  -e 1000  -sd 20  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.05 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6102  -e 1000  -sd 21  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.05 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6102  -e 1000  -sd 22  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.05 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6102  -e 1000  -sd 23  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.05 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6102  -e 1000  -sd 24  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.05 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6103  -e 1000  -sd 20  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.06 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6103  -e 1000  -sd 21  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.06 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6103  -e 1000  -sd 22  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.06 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6103  -e 1000  -sd 23  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.06 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6103  -e 1000  -sd 24  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.06 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6104  -e 1000  -sd 20  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.07 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6104  -e 1000  -sd 21  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.07 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6104  -e 1000  -sd 22  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.07 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6104  -e 1000  -sd 23  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.07 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6104  -e 1000  -sd 24  -m 500  -ns 196  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 1  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.07 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6200  -e 1000  -sd 20  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.03 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6200  -e 1000  -sd 21  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.03 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6200  -e 1000  -sd 22  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.03 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6200  -e 1000  -sd 23  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.03 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6200  -e 1000  -sd 24  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.03 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6201  -e 1000  -sd 20  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.04 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6201  -e 1000  -sd 21  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.04 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6201  -e 1000  -sd 22  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.04 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6201  -e 1000  -sd 23  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.04 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6101  -e 1000  -sd 24  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.04 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6202  -e 1000  -sd 20  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.05 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6202  -e 1000  -sd 21  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.05 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6202  -e 1000  -sd 22  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.05 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6202  -e 1000  -sd 23  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.05 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6202  -e 1000  -sd 24  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.05 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6203  -e 1000  -sd 20  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.06 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6203  -e 1000  -sd 21  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.06 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6203  -e 1000  -sd 22  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.06 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6203  -e 1000  -sd 23  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.06 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6203  -e 1000  -sd 24  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.06 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6204  -e 1000  -sd 20  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.07 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6204  -e 1000  -sd 21  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.07 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6204  -e 1000  -sd 22  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.07 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6204  -e 1000  -sd 23  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.07 
+python3 /home/adf/exp715/Box2dEnv/Box2dEnv/MyPPO-TuneScriptL.py 6104  -e 1000  -sd 24  -m 500  -ns 512  -rl 2  -rn 3  -sc 6  -rp 10  -bt 25  -os 4  -bs 5  -mb 128  -lr 0.2  -gm 0.95  -tk 1  -en 0.07 
+

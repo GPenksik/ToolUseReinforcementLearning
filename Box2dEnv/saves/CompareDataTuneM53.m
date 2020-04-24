@@ -38,7 +38,7 @@ for m = 1:length(Tsk)
         %end
     end
 end
-%%
+%
 nRuns = length(runNumbers);
 maxReward = 24.0;
 completedThreshold = completeThreshold*maxReward;

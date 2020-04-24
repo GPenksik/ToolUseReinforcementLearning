@@ -54,7 +54,7 @@ end
 figure(2)
 clf
 hold on
-j = 2;
+j = 1;
 nSeeds = length(seeds);
 for i=1:nRuns
     plotNum = mod(i,nRuns);
@@ -85,6 +85,38 @@ for i=1:nRuns
 end
 %legend
 
+%%
+
+figure(3)
+clf
+hold on
+indexes = [8, 2, 9];
+for i=1:3
+    subplot(1,3,i);
+    hold on
+    i2 = indexes(i);
+    for k=1:nSeeds
+        plot(meanData{j,i2,k},'DisplayName',names(j,i2,k))
+    end
+    ylim([0 6])
+    xlim([0 timestepLimit-timestepStart])
+    set(gca,'XTick',[0 187 375 563 749],'XTickLabel',{'0','','','','1000'})
+    grid
+    box on
+    if i == 1
+        title("Epsilon = 0.05")
+        xlabel("Episode")
+        ylabel("Moving average of reward")
+    elseif i == 2
+        title("Epsilon = 0.1")
+        xlabel("Episode")
+        ylabel("Moving average of reward")
+    elseif i == 3
+        title("Epsilon = 0.2")
+        xlabel("Episode")
+        ylabel("Moving average of reward")
+    end
+end
 %%
 nParams = 9;
 for j = 1:length(Tsk)

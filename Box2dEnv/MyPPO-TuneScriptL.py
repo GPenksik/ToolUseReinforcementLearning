@@ -9,7 +9,7 @@ import gym
 import torch
 import torch.nn as nn
 import numpy as np
-import Curious_net_actor_cont as Net_Actor
+import Curious_net_actor_cont_3 as Net_Actor
 import Curious_net_critic_cont as Net_Critic
 import random
 np.set_printoptions(precision=3, linewidth=200, floatmode='fixed', suppress=True)
@@ -42,7 +42,7 @@ def main():
     parser.add_argument('-tk', '--task', type=int, default=0)
     parser.add_argument('-gm', '--gamma', type=float, default=0.99)
     parser.add_argument('-lr', '--epsilon', type=float, default=0.2)
-
+    parser.add_argument('-en', '--entropy', type=float, default=0.0)
     args = parser.parse_args()
 
     random_seed = args.seed
@@ -71,10 +71,10 @@ def main():
     ac_net_actor = Net_Actor.Net(N_STATES, N_ACTIONS, NETWORK_SIZE)
 
     criterion_val = nn.MSELoss()
-    # optimizer_c = torch.optim.Adam(ac_net_critic.parameters(), lr=0.0001, betas=(0.9, 0.999), eps=1e-08, weight_decay=0.00, amsgrad=False)
-    # optimizer_a = torch.optim.Adam(ac_net_actor.parameters(), lr=0.00001, betas=(0.9, 0.999), eps=1e-08, weight_decay=0.00, amsgrad=False)
-    optimizer_c = torch.optim.SGD(ac_net_critic.parameters(), lr=0.001, momentum=0.9, nesterov=True)
-    optimizer_a = torch.optim.SGD(ac_net_actor.parameters(), lr=0.001, momentum=0.9, nesterov=True)
+    optimizer_c = torch.optim.Adam(ac_net_critic.parameters(), lr=0.0001, betas=(0.9, 0.999), eps=1e-08, weight_decay=0.00, amsgrad=False)
+    optimizer_a = torch.optim.Adam(ac_net_actor.parameters(), lr=0.0001, betas=(0.9, 0.999), eps=1e-08, weight_decay=0.00, amsgrad=False)
+    # optimizer_c = torch.optim.SGD(ac_net_critic.parameters(), lr=0.001, momentum=0.9, nesterov=True)
+    # optimizer_a = torch.optim.SGD(ac_net_actor.parameters(), lr=0.001, momentum=0.9, nesterov=True)
 
     gamma = args.gamma
 
@@ -290,11 +290,11 @@ def main():
 
                 # Calculate batch entropy
                 batch_entropy = batch_distribution.entropy()
-                batch_entropy_loss = torch.mean(batch_entropy)
+                batch_entropy_loss = torch.mean(torch.pow(batch_entropy, 2))
 
                 # Choose minimum of surrogates and calculate L_clip as final loss function
                 r_theta_surrogate_min = torch.min(surrogate1, surrogate2)
-                L_clip = -torch.sum(r_theta_surrogate_min) / (r_theta_surrogate_min.size()[0])  # + 0.025 * batch_entropy_loss
+                L_clip = -torch.sum(r_theta_surrogate_min) / (r_theta_surrogate_min.size()[0])  + args.entropy * batch_entropy_loss
 
                 # if batch_entropy_loss > 1.2:
                 #     L_clip = L_clip + 0.05 * batch_entropy_loss
